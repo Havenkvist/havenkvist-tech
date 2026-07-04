@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/i18n/dictionaries";
 
@@ -89,8 +90,8 @@ export default async function PricingPage({
                     ))}
                   </ul>
 
-                  <a
-                    href={`mailto:${dict.footer.email}?subject=${encodeURIComponent(tier.name)}`}
+                  <Link
+                    href={`/${lang}/contact?plan=${encodeURIComponent(tier.name)}`}
                     className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3 text-center text-sm font-semibold transition-colors ${
                       tier.highlighted
                         ? "bg-blue-600 text-white hover:bg-blue-700"
@@ -98,7 +99,7 @@ export default async function PricingPage({
                     }`}
                   >
                     {tier.cta}
-                  </a>
+                  </Link>
                 </div>
               );
             })}

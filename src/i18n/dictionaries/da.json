@@ -240,6 +240,27 @@
       ]
     }
   },
+  "contact": {
+    "hero": {
+      "label": "Kontakt",
+      "title": "Lad os tale om dit projekt",
+      "subtitle": "Udfyld formularen nedenfor, så vender jeg tilbage inden for 24 timer."
+    },
+    "form": {
+      "nameLabel": "Navn",
+      "namePlaceholder": "Dit navn",
+      "emailLabel": "Email",
+      "emailPlaceholder": "dig@virksomhed.dk",
+      "messageLabel": "Besked",
+      "messagePlaceholder": "Fortæl mig om dit projekt...",
+      "planPrefix": "Hej, jeg er interesseret i",
+      "planSuffix": "-pakken. Kan du fortælle mig mere?",
+      "submit": "Send besked",
+      "sending": "Sender...",
+      "success": "Tak for din henvendelse! Jeg vender tilbage inden for 24 timer.",
+      "error": "Der gik noget galt. Prøv igen, eller skriv til mig direkte."
+    }
+  },
   "footer": {
     "tagline": "Freelance webudvikling med fokus på performance, design og resultater.",
     "columnsNav": "Navigation",

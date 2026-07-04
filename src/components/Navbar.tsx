@@ -22,6 +22,7 @@ export function Navbar({
     { href: `/${locale}/about`, label: nav.about },
     { href: `/${locale}/services`, label: nav.services },
     { href: `/${locale}/pricing`, label: nav.pricing },
+    { href: `/${locale}/contact`, label: nav.contact },
   ];
 
   return (

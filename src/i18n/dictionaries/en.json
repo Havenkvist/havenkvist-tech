@@ -240,6 +240,27 @@
       ]
     }
   },
+  "contact": {
+    "hero": {
+      "label": "Contact",
+      "title": "Let's talk about your project",
+      "subtitle": "Fill in the form below and I'll get back to you within 24 hours."
+    },
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@company.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "planPrefix": "Hi, I'm interested in the",
+      "planSuffix": "package. Could you tell me more?",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Thanks for reaching out! I'll get back to you within 24 hours.",
+      "error": "Something went wrong. Please try again, or email me directly."
+    }
+  },
   "footer": {
     "tagline": "Freelance web development focused on performance, design, and results.",
     "columnsNav": "Navigation",

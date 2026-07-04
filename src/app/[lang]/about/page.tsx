@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/i18n/dictionaries";
 
@@ -135,12 +136,12 @@ export default async function AboutPage({
             {cta.body}
           </p>
           <div className="mt-8">
-            <a
-              href={`mailto:${dict.footer.email}`}
+            <Link
+              href={`/${lang}/contact`}
               className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-white/90 dark:bg-black dark:text-white dark:hover:bg-black/80"
             >
               {cta.button}
-            </a>
+            </Link>
           </div>
         </div>
       </section>
