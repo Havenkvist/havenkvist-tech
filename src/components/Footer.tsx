@@ -1,9 +1,13 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 
 export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const year = new Date().getFullYear();
+  const pathname = usePathname() ?? "";
 
   const links = [
     { href: `/${locale}`, label: dict.nav.home },
@@ -30,16 +34,27 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               {dict.footer.columnsNav}
             </p>
             <ul className="mt-3 flex flex-col gap-2">
-              {links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-black/60 transition-colors hover:text-black dark:text-white/60 dark:hover:text-white"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {links.map((link) => {
+                const active =
+                  link.href === `/${locale}`
+                    ? pathname === link.href
+                    : pathname.startsWith(link.href);
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      aria-current={active ? "page" : undefined}
+                      className={`text-sm transition-colors ${
+                        active
+                          ? "font-semibold text-black dark:text-white"
+                          : "text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white"
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
