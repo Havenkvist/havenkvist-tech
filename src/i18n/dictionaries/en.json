@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "Havenkvist Tech — Next.js & React Development Studio",
+    "description": "Havenkvist Tech builds fast, modern websites and web applications with Next.js and React for businesses that want to grow online."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "cta": "Get a quote"
+  },
+  "home": {
+    "hero": {
+      "badge": "Next.js & React specialists",
+      "title": "We build websites that",
+      "titleHighlight": "grow with your business",
+      "subtitle": "Havenkvist Tech is a freelance development studio designing and building fast, scalable websites and web applications with modern technology — tailored to your business.",
+      "ctaPrimary": "Start your project",
+      "ctaSecondary": "See our services",
+      "stats": [
+        { "value": "<100ms", "label": "Average response time" },
+        { "value": "100/100", "label": "Lighthouse performance" },
+        { "value": "24h", "label": "Response time on inquiries" }
+      ]
+    },
+    "intro": {
+      "label": "Why Havenkvist Tech",
+      "title": "Technical craft meets business understanding",
+      "body": "I combine modern web technology with a clear understanding of what actually drives your business forward. No unnecessary complexity — just solutions that work, load fast, and are easy to maintain.",
+      "points": [
+        {
+          "title": "Custom-built code",
+          "body": "No heavy page builders. Every component is written from scratch with React and Next.js, keeping your site fast and flexible."
+        },
+        {
+          "title": "Built to last",
+          "body": "Clean, type-safe code with TypeScript means fewer bugs and a solution that's easy to build on in the future."
+        },
+        {
+          "title": "Direct collaboration",
+          "body": "You talk directly to the developer building your solution — no middlemen, no miscommunication."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to elevate your digital presence?",
+      "body": "Let's talk about your project. Book a no-obligation call and we'll figure out how I can best help.",
+      "button": "Get in touch"
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Services",
+      "title": "Web development that delivers results",
+      "subtitle": "From new websites to ongoing maintenance and performance optimization — I handle the technical side so you can focus on your business."
+    },
+    "list": [
+      {
+        "icon": "code",
+        "title": "Web Development (Next.js/React)",
+        "description": "Custom websites and web applications built with Next.js and React — modern, fast, and ready to grow with your business.",
+        "features": [
+          "Custom design and development",
+          "Server-side rendering for optimal SEO",
+          "Responsive design across all devices",
+          "Integration with CMS, payments, and APIs"
+        ]
+      },
+      {
+        "icon": "maintenance",
+        "title": "Maintenance & Support",
+        "description": "Ongoing technical maintenance so your website stays up to date, secure, and bug-free — without you having to think about it.",
+        "features": [
+          "Continuous dependency updates",
+          "Security monitoring and bug fixes",
+          "Backups and troubleshooting",
+          "Priority support for urgent issues"
+        ]
+      },
+      {
+        "icon": "performance",
+        "title": "Performance Optimization",
+        "description": "Faster websites mean better user experience, higher conversion, and better search engine rankings.",
+        "features": [
+          "Core Web Vitals and Lighthouse analysis",
+          "Image and asset optimization",
+          "Code splitting and caching strategy",
+          "Ongoing performance monitoring"
+        ]
+      }
+    ],
+    "process": {
+      "title": "How we work together",
+      "steps": [
+        {
+          "title": "Kickoff",
+          "body": "We uncover your goals, target audience, and requirements in an initial conversation."
+        },
+        {
+          "title": "Design & development",
+          "body": "I build the solution in iterations, so you can follow along and give feedback throughout."
+        },
+        {
+          "title": "Testing & launch",
+          "body": "Thorough testing of performance, security, and functionality before launch."
+        },
+        {
+          "title": "Follow-up",
+          "body": "After launch, I'm ready with support and further development as needed."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Have a project in mind?",
+      "body": "Let's find out which solution fits your needs and budget best.",
+      "button": "See pricing"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "label": "Pricing",
+      "title": "Transparent pricing, no surprises",
+      "subtitle": "Choose the package that fits your project. All packages can be tailored — get in touch for a custom quote."
+    },
+    "tiers": [
+      {
+        "name": "Basic",
+        "price": "1,395",
+        "period": "one-time",
+        "description": "Perfect for entrepreneurs and small businesses that need a professional online presence.",
+        "features": [
+          "Up to 5 pages",
+          "Responsive design",
+          "Basic SEO setup",
+          "Contact form",
+          "1 month of support after launch"
+        ],
+        "cta": "Choose Basic",
+        "highlighted": false
+      },
+      {
+        "name": "Professional",
+        "price": "2,795",
+        "period": "one-time",
+        "description": "For businesses that need custom functionality and better performance.",
+        "features": [
+          "Up to 12 pages",
+          "Custom UI/UX design",
+          "CMS integration",
+          "Advanced SEO and performance optimization",
+          "Multilingual setup (DA/EN)",
+          "3 months of support after launch"
+        ],
+        "cta": "Choose Professional",
+        "highlighted": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Contact me",
+        "period": "custom quote",
+        "description": "For complex projects, web applications, and businesses with specific requirements.",
+        "features": [
+          "Unlimited pages",
+          "Custom web application",
+          "API and systems integrations",
+          "Dedicated performance and security setup",
+          "Ongoing maintenance agreement",
+          "Priority support"
+        ],
+        "cta": "Get in touch",
+        "highlighted": false
+      }
+    ],
+    "note": "All prices are excluding VAT. Hosting and domain are not included, but I'm happy to help with setup.",
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "How long does a project take?",
+          "answer": "A typical Basic project takes 2-3 weeks, while Professional and Enterprise projects usually take 4-8 weeks depending on scope."
+        },
+        {
+          "question": "Can I edit the content myself afterward?",
+          "answer": "Yes. For Professional and Enterprise packages, I integrate a CMS so you can update text and images yourself without coding."
+        },
+        {
+          "question": "Do you offer payment plans?",
+          "answer": "Yes, projects are typically invoiced in two installments: 50% at kickoff and 50% at launch. Get in touch to arrange details."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Freelance web development focused on performance, design, and results.",
+    "columnsNav": "Navigation",
+    "columnsContact": "Contact",
+    "email": "hey@havenkvist.tech",
+    "location": "Denmark · Working with clients globally",
+    "rights": "All rights reserved."
+  }
+}

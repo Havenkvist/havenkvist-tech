@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "Havenkvist Tech — Next.js & React udviklingsstudie",
+    "description": "Havenkvist Tech bygger hurtige, moderne hjemmesider og webapplikationer med Next.js og React til virksomheder der vil vokse online."
+  },
+  "nav": {
+    "home": "Forside",
+    "services": "Ydelser",
+    "pricing": "Priser",
+    "contact": "Kontakt",
+    "cta": "Få et tilbud"
+  },
+  "home": {
+    "hero": {
+      "badge": "Next.js & React specialister",
+      "title": "Vi bygger websites der",
+      "titleHighlight": "vokser med din forretning",
+      "subtitle": "Havenkvist Tech er et freelance udviklingsstudie, der designer og bygger hurtige, skalerbare hjemmesider og webapplikationer med moderne teknologi — skræddersyet til din virksomhed.",
+      "ctaPrimary": "Start dit projekt",
+      "ctaSecondary": "Se vores ydelser",
+      "stats": [
+        { "value": "<100ms", "label": "Gennemsnitlig svartid" },
+        { "value": "100/100", "label": "Lighthouse performance" },
+        { "value": "24t", "label": "Svar på henvendelser" }
+      ]
+    },
+    "intro": {
+      "label": "Hvorfor Havenkvist Tech",
+      "title": "Teknisk håndværk møder forretningsforståelse",
+      "body": "Jeg kombinerer moderne webteknologi med en klar forståelse for, hvad der faktisk driver din forretning fremad. Ingen unødvendig kompleksitet — kun løsninger der virker, indlæser hurtigt og er nemme at vedligeholde.",
+      "points": [
+        {
+          "title": "Skræddersyet kode",
+          "body": "Ingen tunge page-builders. Hver komponent er skrevet fra bunden med React og Next.js, så din side forbliver hurtig og fleksibel."
+        },
+        {
+          "title": "Bygget til at vare",
+          "body": "Ren, typesikker kode med TypeScript betyder færre fejl og en løsning, der er nem at bygge videre på i fremtiden."
+        },
+        {
+          "title": "Direkte samarbejde",
+          "body": "Du taler direkte med den udvikler, der bygger din løsning — ingen mellemled, ingen misforståelser."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Klar til at løfte din digitale tilstedeværelse?",
+      "body": "Lad os tale om dit projekt. Book en uforpligtende samtale, så finder vi ud af, hvordan jeg bedst kan hjælpe.",
+      "button": "Kontakt mig"
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Ydelser",
+      "title": "Webudvikling der leverer resultater",
+      "subtitle": "Fra nye hjemmesider til løbende vedligeholdelse og performance-optimering — jeg hjælper dig med den tekniske del, så du kan fokusere på din forretning."
+    },
+    "list": [
+      {
+        "icon": "code",
+        "title": "Webudvikling (Next.js/React)",
+        "description": "Skræddersyede hjemmesider og webapplikationer bygget med Next.js og React — moderne, hurtige og klar til at vokse med din forretning.",
+        "features": [
+          "Skræddersyet design og udvikling",
+          "Server-side rendering for optimal SEO",
+          "Responsivt design til alle enheder",
+          "Integration med CMS, betaling og API'er"
+        ]
+      },
+      {
+        "icon": "maintenance",
+        "title": "Vedligeholdelse & support",
+        "description": "Løbende teknisk vedligeholdelse, så din hjemmeside altid er opdateret, sikker og fejlfri — uden at du selv skal tænke på det.",
+        "features": [
+          "Løbende opdateringer af afhængigheder",
+          "Sikkerhedsovervågning og fejlrettelser",
+          "Backup og fejlsøgning",
+          "Prioriteret support ved akutte problemer"
+        ]
+      },
+      {
+        "icon": "performance",
+        "title": "Performance-optimering",
+        "description": "Hurtigere hjemmesider betyder bedre brugeroplevelse, højere konvertering og bedre placering i søgemaskiner.",
+        "features": [
+          "Core Web Vitals og Lighthouse-analyse",
+          "Billede- og asset-optimering",
+          "Kodesplitting og caching-strategi",
+          "Løbende performance-monitorering"
+        ]
+      }
+    ],
+    "process": {
+      "title": "Sådan arbejder vi sammen",
+      "steps": [
+        {
+          "title": "Opstart",
+          "body": "Vi afdækker dine mål, målgruppe og krav i en indledende samtale."
+        },
+        {
+          "title": "Design & udvikling",
+          "body": "Jeg bygger løsningen i iterationer, så du løbende kan følge med og give feedback."
+        },
+        {
+          "title": "Test & lancering",
+          "body": "Grundig test af performance, sikkerhed og funktionalitet før lancering."
+        },
+        {
+          "title": "Opfølgning",
+          "body": "Efter lancering er jeg klar med support og videreudvikling efter behov."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Har du et projekt i tankerne?",
+      "body": "Lad os finde ud af, hvilken løsning der passer bedst til dine behov og budget.",
+      "button": "Se priser"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "label": "Priser",
+      "title": "Gennemsigtige priser, ingen overraskelser",
+      "subtitle": "Vælg den pakke der passer til dit projekt. Alle pakker kan tilpasses — kontakt mig for et skræddersyet tilbud."
+    },
+    "tiers": [
+      {
+        "name": "Basic",
+        "price": "9.995",
+        "period": "engangsbeløb",
+        "description": "Perfekt til iværksættere og mindre virksomheder, der har brug for en professionel tilstedeværelse online.",
+        "features": [
+          "Op til 5 sider",
+          "Responsivt design",
+          "Grundlæggende SEO-opsætning",
+          "Kontaktformular",
+          "1 måneds support efter lancering"
+        ],
+        "cta": "Vælg Basic",
+        "highlighted": false
+      },
+      {
+        "name": "Professional",
+        "price": "19.995",
+        "period": "engangsbeløb",
+        "description": "Til virksomheder der har brug for skræddersyede funktioner og bedre performance.",
+        "features": [
+          "Op til 12 sider",
+          "Skræddersyet UI/UX-design",
+          "CMS-integration",
+          "Avanceret SEO og performance-optimering",
+          "Flersproget opsætning (DA/EN)",
+          "3 måneders support efter lancering"
+        ],
+        "cta": "Vælg Professional",
+        "highlighted": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Kontakt mig",
+        "period": "skræddersyet tilbud",
+        "description": "Til komplekse projekter, webapplikationer og virksomheder med specifikke krav.",
+        "features": [
+          "Ubegrænset antal sider",
+          "Skræddersyet webapplikation",
+          "API- og systemintegrationer",
+          "Dedikeret performance- og sikkerhedsopsætning",
+          "Løbende vedligeholdelsesaftale",
+          "Prioriteret support"
+        ],
+        "cta": "Kontakt mig",
+        "highlighted": false
+      }
+    ],
+    "note": "Alle priser er ekskl. moms. Hosting og domæne er ikke inkluderet, men jeg hjælper gerne med opsætning.",
+    "faq": {
+      "title": "Ofte stillede spørgsmål",
+      "items": [
+        {
+          "question": "Hvor lang tid tager et projekt?",
+          "answer": "Et typisk Basic-projekt tager 2-3 uger, mens Professional og Enterprise-projekter typisk tager 4-8 uger afhængigt af omfang."
+        },
+        {
+          "question": "Kan jeg selv redigere indholdet bagefter?",
+          "answer": "Ja. Ved Professional og Enterprise-pakker integrerer jeg et CMS, så du selv kan opdatere tekster og billeder uden at kunne kode."
+        },
+        {
+          "question": "Tilbyder du betalingsplaner?",
+          "answer": "Ja, projekter faktureres typisk i to rater: 50% ved opstart og 50% ved lancering. Kontakt mig for at aftale nærmere."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Freelance webudvikling med fokus på performance, design og resultater.",
+    "columnsNav": "Navigation",
+    "columnsContact": "Kontakt",
+    "email": "hej@havenkvist.tech",
+    "location": "Danmark · Arbejder med kunder globalt",
+    "rights": "Alle rettigheder forbeholdes."
+  }
+}
