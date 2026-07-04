@@ -19,6 +19,7 @@ export function Navbar({
 
   const links = [
     { href: `/${locale}`, label: nav.home },
+    { href: `/${locale}/about`, label: nav.about },
     { href: `/${locale}/services`, label: nav.services },
     { href: `/${locale}/pricing`, label: nav.pricing },
   ];

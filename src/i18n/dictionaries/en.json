@@ -5,6 +5,7 @@
   },
   "nav": {
     "home": "Home",
+    "about": "About",
     "services": "Services",
     "pricing": "Pricing",
     "contact": "Contact",
@@ -46,6 +47,54 @@
     "cta": {
       "title": "Ready to elevate your digital presence?",
       "body": "Let's talk about your project. Book a no-obligation call and we'll figure out how I can best help.",
+      "button": "Get in touch"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "About",
+      "title": "Code by day, code by night",
+      "subtitle": "The developer behind Havenkvist Tech — and why this studio exists."
+    },
+    "story": {
+      "label": "My background",
+      "title": "A fullstack developer with a nighttime obsession for the frontend",
+      "paragraphs": [
+        "I'm Lucas, a fullstack developer based in Haslev, Denmark. By day, I build and maintain production applications with Elixir and Phoenix LiveView — systems that need to stay fast, reliable, and easy to reason about at scale.",
+        "Havenkvist Tech is my evening and weekend project — a small freelance studio where I explore the other side of the stack. Here, I mainly work with React, TypeScript, and Next.js, building modern websites and web applications for clients who want a fast, polished online presence.",
+        "Splitting my time between two ecosystems keeps me sharp. The discipline and simplicity I value in Elixir shapes how I write React — predictable state, clear data flow, and code that won't surprise you six months from now.",
+        "When I'm not at my day job or working on client projects, you'll usually find me refining this very site, reading up on web performance, or experimenting with the newest Next.js features."
+      ]
+    },
+    "values": {
+      "title": "How I work",
+      "points": [
+        {
+          "title": "Reliability",
+          "body": "Production experience from my day job means I take uptime, testing, and maintainability seriously — even for small projects."
+        },
+        {
+          "title": "Clear communication",
+          "body": "You'll always know where your project stands. No jargon, no radio silence — just honest, direct updates."
+        },
+        {
+          "title": "Modern craft",
+          "body": "Every project is built with the same modern stack I use to explore new ideas: React, TypeScript, and Next.js."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Let's get in touch",
+      "body": "Have a project in mind, or just want to say hi? Reach out directly — I read and answer every message myself.",
+      "addressLabel": "Address",
+      "addressLines": ["Frøgårdsvej 7, 2. th.", "4690 Haslev, Denmark"],
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "phone": "+45 45 42 09 06"
+    },
+    "cta": {
+      "title": "Ready to start a project?",
+      "body": "Let's talk about what you're building and how I can help bring it to life.",
       "button": "Get in touch"
     }
   },

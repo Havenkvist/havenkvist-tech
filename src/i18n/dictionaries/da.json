@@ -5,6 +5,7 @@
   },
   "nav": {
     "home": "Forside",
+    "about": "Om mig",
     "services": "Ydelser",
     "pricing": "Priser",
     "contact": "Kontakt",
@@ -46,6 +47,54 @@
     "cta": {
       "title": "Klar til at løfte din digitale tilstedeværelse?",
       "body": "Lad os tale om dit projekt. Book en uforpligtende samtale, så finder vi ud af, hvordan jeg bedst kan hjælpe.",
+      "button": "Kontakt mig"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "Om mig",
+      "title": "Kode om dagen, kode om natten",
+      "subtitle": "Udvikleren bag Havenkvist Tech — og hvorfor dette studie findes."
+    },
+    "story": {
+      "label": "Min baggrund",
+      "title": "Fullstack-udvikler med en natlig passion for frontend",
+      "paragraphs": [
+        "Jeg hedder Lucas og er fullstack-udvikler bosat i Haslev. Om dagen bygger og vedligeholder jeg produktionsapplikationer med Elixir og Phoenix LiveView — systemer, der skal være hurtige, driftsikre og nemme at forstå i stor skala.",
+        "Havenkvist Tech er mit aften- og weekendprojekt — et lille freelance-studie, hvor jeg udforsker den anden side af stacken. Her arbejder jeg primært med React, TypeScript og Next.js og bygger moderne hjemmesider og webapplikationer til kunder, der ønsker en hurtig og gennemført tilstedeværelse online.",
+        "At dele min tid mellem to økosystemer holder mig skarp. Den disciplin og enkelhed, jeg værdsætter i Elixir, præger den måde, jeg skriver React på — forudsigelig state, tydelig datastrøm og kode, der ikke overrasker dig om et halvt år.",
+        "Når jeg ikke er på mit daglige arbejde eller i gang med kundeprojekter, finder du mig typisk i gang med at finpudse netop denne side, læse op på webperformance eller eksperimentere med de nyeste Next.js-funktioner."
+      ]
+    },
+    "values": {
+      "title": "Sådan arbejder jeg",
+      "points": [
+        {
+          "title": "Driftsikkerhed",
+          "body": "Produktionserfaring fra mit daglige arbejde betyder, at jeg tager oppetid, test og vedligeholdelse alvorligt — også i mindre projekter."
+        },
+        {
+          "title": "Tydelig kommunikation",
+          "body": "Du ved altid, hvor dit projekt står. Ingen fagjargon, ingen radiotavshed — kun ærlige, direkte opdateringer."
+        },
+        {
+          "title": "Moderne håndværk",
+          "body": "Hvert projekt bygges med den samme moderne stack, jeg selv bruger til at udforske nye idéer: React, TypeScript og Next.js."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Lad os komme i kontakt",
+      "body": "Har du et projekt i tankerne, eller vil du bare sige hej? Skriv direkte til mig — jeg læser og svarer på alle henvendelser selv.",
+      "addressLabel": "Adresse",
+      "addressLines": ["Frøgårdsvej 7, 2. th.", "4690 Haslev"],
+      "emailLabel": "Email",
+      "phoneLabel": "Telefon",
+      "phone": "+45 45 42 09 06"
+    },
+    "cta": {
+      "title": "Klar til at starte et projekt?",
+      "body": "Lad os tale om, hvad du er i gang med at bygge, og hvordan jeg kan hjælpe det til at blive til virkelighed.",
       "button": "Kontakt mig"
     }
   },

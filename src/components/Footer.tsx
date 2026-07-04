@@ -7,6 +7,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
   const links = [
     { href: `/${locale}`, label: dict.nav.home },
+    { href: `/${locale}/about`, label: dict.nav.about },
     { href: `/${locale}/services`, label: dict.nav.services },
     { href: `/${locale}/pricing`, label: dict.nav.pricing },
   ];
