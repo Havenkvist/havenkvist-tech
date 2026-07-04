@@ -1,6 +1,36 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/i18n/dictionaries";
+import { pathForRoute, urlForRoute } from "@/i18n/config";
+
+export async function generateMetadata({
+  params,
+}: PageProps<"/[lang]/about">): Promise<Metadata> {
+  const { lang } = await params;
+  if (!hasLocale(lang)) return {};
+
+  const dict = await getDictionary(lang);
+  const canonical = urlForRoute(lang, "about");
+
+  return {
+    title: dict.about.meta.title,
+    description: dict.about.meta.description,
+    alternates: {
+      canonical,
+      languages: {
+        da: urlForRoute("da", "about"),
+        en: urlForRoute("en", "about"),
+        "x-default": urlForRoute("en", "about"),
+      },
+    },
+    openGraph: {
+      title: dict.about.meta.title,
+      description: dict.about.meta.description,
+      url: canonical,
+    },
+  };
+}
 
 export default async function AboutPage({
   params,
@@ -137,7 +167,7 @@ export default async function AboutPage({
           </p>
           <div className="mt-8">
             <Link
-              href={`/${lang}/contact`}
+              href={pathForRoute(lang, "contact")}
               className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-white/90 dark:bg-black dark:text-white dark:hover:bg-black/80"
             >
               {cta.button}

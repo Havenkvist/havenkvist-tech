@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
-import { locales } from "@/i18n/config";
+import { locales, localeDomains } from "@/i18n/config";
 import { getDictionary, hasLocale } from "@/i18n/dictionaries";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { professionalServiceJsonLd } from "@/lib/structured-data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,9 +29,29 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
 
   const dict = await getDictionary(lang);
+
   return {
-    title: dict.meta.title,
+    metadataBase: new URL(localeDomains[lang]),
+    title: {
+      default: dict.meta.title,
+      template: "%s | Havenkvist Tech",
+    },
     description: dict.meta.description,
+    openGraph: {
+      siteName: "Havenkvist Tech",
+      locale: lang === "da" ? "da_DK" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    ...(process.env.GOOGLE_SITE_VERIFICATION
+      ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+      : {}),
   };
 }
 
@@ -42,6 +63,7 @@ export default async function RootLayout({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang);
+  const jsonLd = professionalServiceJsonLd(lang, dict);
 
   return (
     <html
@@ -49,6 +71,10 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-white text-black dark:bg-black dark:text-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Navbar locale={lang} nav={dict.nav} />
         <main className="flex-1">{children}</main>
         <Footer locale={lang} dict={dict} />

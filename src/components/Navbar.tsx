@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { Locale } from "@/i18n/config";
+import { pathForRoute, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
@@ -18,18 +18,18 @@ export function Navbar({
   const pathname = usePathname() ?? "";
 
   const links = [
-    { href: `/${locale}`, label: nav.home },
-    { href: `/${locale}/about`, label: nav.about },
-    { href: `/${locale}/services`, label: nav.services },
-    { href: `/${locale}/pricing`, label: nav.pricing },
-    { href: `/${locale}/contact`, label: nav.contact },
+    { href: pathForRoute(locale, "home"), label: nav.home },
+    { href: pathForRoute(locale, "about"), label: nav.about },
+    { href: pathForRoute(locale, "services"), label: nav.services },
+    { href: pathForRoute(locale, "pricing"), label: nav.pricing },
+    { href: pathForRoute(locale, "contact"), label: nav.contact },
   ];
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur-md dark:border-white/10 dark:bg-black/80">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link
-          href={`/${locale}`}
+          href={pathForRoute(locale, "home")}
           className="text-lg font-semibold tracking-tight text-black dark:text-white"
           onClick={() => setOpen(false)}
         >
@@ -39,7 +39,7 @@ export function Navbar({
         <nav className="hidden items-center gap-8 md:flex">
           {links.map((link) => {
             const active =
-              link.href === `/${locale}`
+              link.href === "/"
                 ? pathname === link.href
                 : pathname.startsWith(link.href);
             return (
@@ -61,7 +61,7 @@ export function Navbar({
         <div className="hidden items-center gap-4 md:flex">
           <LanguageSwitcher locale={locale} />
           <Link
-            href={`/${locale}/pricing`}
+            href={pathForRoute(locale, "pricing")}
             className="rounded-full bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/90"
           >
             {nav.cta}
@@ -104,7 +104,7 @@ export function Navbar({
           <div className="mt-5 flex items-center justify-between">
             <LanguageSwitcher locale={locale} />
             <Link
-              href={`/${locale}/pricing`}
+              href={pathForRoute(locale, "pricing")}
               onClick={() => setOpen(false)}
               className="rounded-full bg-black px-4 py-2 text-sm font-medium text-white dark:bg-white dark:text-black"
             >

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Havenkvist Tech — Next.js & React Development Studio",
-    "description": "Havenkvist Tech builds fast, modern websites and web applications with Next.js and React for businesses that want to grow online."
+    "title": "Havenkvist Tech – Freelance Web Developer in Haslev, Denmark",
+    "description": "Freelance web developer based in Haslev, Denmark, building fast, professional websites for tradespeople, craftsmen, and small businesses across Zealand."
   },
   "nav": {
     "home": "Home",
@@ -51,6 +51,10 @@
     }
   },
   "about": {
+    "meta": {
+      "title": "About – Freelance Web Developer in Haslev",
+      "description": "Meet Lucas, fullstack developer and the person behind Havenkvist Tech. Based in Haslev, Denmark, building modern, fast websites for businesses across Zealand."
+    },
     "hero": {
       "label": "About",
       "title": "Code by day, code by night",
@@ -99,6 +103,10 @@
     }
   },
   "services": {
+    "meta": {
+      "title": "Services – Websites for Tradespeople & Local Businesses",
+      "description": "Custom web development, maintenance, and performance optimization for tradespeople, craftsmen, and small businesses in and around Haslev, Denmark."
+    },
     "hero": {
       "label": "Services",
       "title": "Web development that delivers results",
@@ -167,6 +175,10 @@
     }
   },
   "pricing": {
+    "meta": {
+      "title": "Website Pricing – Transparent Packages",
+      "description": "See pricing for professional small business websites. Packages starting at $1,395, no hidden fees. Based in Haslev, Denmark."
+    },
     "hero": {
       "label": "Pricing",
       "title": "Transparent pricing, no surprises",
@@ -241,6 +253,10 @@
     }
   },
   "contact": {
+    "meta": {
+      "title": "Contact – Web Developer in Haslev, Denmark",
+      "description": "Have a web project in mind? Get in touch with Havenkvist Tech in Haslev for a no-obligation chat about your new website."
+    },
     "hero": {
       "label": "Contact",
       "title": "Let's talk about your project",
@@ -266,7 +282,7 @@
     "columnsNav": "Navigation",
     "columnsContact": "Contact",
     "email": "hey@havenkvist.tech",
-    "location": "Denmark · Working with clients globally",
+    "location": "Haslev, Denmark · Serving all of Zealand",
     "rights": "All rights reserved."
   }
 }

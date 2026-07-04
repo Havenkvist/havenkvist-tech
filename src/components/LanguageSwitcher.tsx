@@ -1,26 +1,29 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { locales, type Locale } from "@/i18n/config";
+import {
+  locales,
+  localeDomains,
+  pathForRoute,
+  routeKeyForPath,
+  type Locale,
+} from "@/i18n/config";
 
 export function LanguageSwitcher({ locale }: { locale: Locale }) {
-  const pathname = usePathname() ?? `/${locale}`;
-  const segments = pathname.split("/");
-  const rest = segments.slice(2).join("/");
-
-  function pathForLocale(target: Locale) {
-    return rest ? `/${target}/${rest}` : `/${target}`;
-  }
+  const pathname = usePathname() ?? "/";
+  const currentKey = routeKeyForPath(locale, pathname);
 
   return (
     <div className="flex items-center rounded-full border border-black/10 bg-black/[0.03] p-0.5 text-sm dark:border-white/10 dark:bg-white/5">
       {locales.map((target) => {
         const active = target === locale;
+        const href = active
+          ? pathname
+          : `${localeDomains[target]}${pathForRoute(target, currentKey)}`;
         return (
-          <Link
+          <a
             key={target}
-            href={pathForLocale(target)}
+            href={href}
             onClick={() => {
               document.cookie = `NEXT_LOCALE=${target};path=/;max-age=31536000`;
             }}
@@ -32,7 +35,7 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
             }`}
           >
             {target}
-          </Link>
+          </a>
         );
       })}
     </div>

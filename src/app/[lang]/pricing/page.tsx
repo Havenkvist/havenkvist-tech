@@ -1,6 +1,36 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/i18n/dictionaries";
+import { pathForRoute, urlForRoute } from "@/i18n/config";
+
+export async function generateMetadata({
+  params,
+}: PageProps<"/[lang]/pricing">): Promise<Metadata> {
+  const { lang } = await params;
+  if (!hasLocale(lang)) return {};
+
+  const dict = await getDictionary(lang);
+  const canonical = urlForRoute(lang, "pricing");
+
+  return {
+    title: dict.pricing.meta.title,
+    description: dict.pricing.meta.description,
+    alternates: {
+      canonical,
+      languages: {
+        da: urlForRoute("da", "pricing"),
+        en: urlForRoute("en", "pricing"),
+        "x-default": urlForRoute("en", "pricing"),
+      },
+    },
+    openGraph: {
+      title: dict.pricing.meta.title,
+      description: dict.pricing.meta.description,
+      url: canonical,
+    },
+  };
+}
 
 export default async function PricingPage({
   params,
@@ -91,7 +121,7 @@ export default async function PricingPage({
                   </ul>
 
                   <Link
-                    href={`/${lang}/contact?plan=${encodeURIComponent(tier.name)}`}
+                    href={`${pathForRoute(lang, "contact")}?plan=${encodeURIComponent(tier.name)}`}
                     className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3 text-center text-sm font-semibold transition-colors ${
                       tier.highlighted
                         ? "bg-blue-600 text-white hover:bg-blue-700"

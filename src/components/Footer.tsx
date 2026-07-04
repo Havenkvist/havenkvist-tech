@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { Locale } from "@/i18n/config";
+import { pathForRoute, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 
 export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
@@ -10,11 +10,11 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const pathname = usePathname() ?? "";
 
   const links = [
-    { href: `/${locale}`, label: dict.nav.home },
-    { href: `/${locale}/about`, label: dict.nav.about },
-    { href: `/${locale}/services`, label: dict.nav.services },
-    { href: `/${locale}/pricing`, label: dict.nav.pricing },
-    { href: `/${locale}/contact`, label: dict.nav.contact },
+    { href: pathForRoute(locale, "home"), label: dict.nav.home },
+    { href: pathForRoute(locale, "about"), label: dict.nav.about },
+    { href: pathForRoute(locale, "services"), label: dict.nav.services },
+    { href: pathForRoute(locale, "pricing"), label: dict.nav.pricing },
+    { href: pathForRoute(locale, "contact"), label: dict.nav.contact },
   ];
 
   return (
@@ -37,7 +37,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             <ul className="mt-3 flex flex-col gap-2">
               {links.map((link) => {
                 const active =
-                  link.href === `/${locale}`
+                  link.href === "/"
                     ? pathname === link.href
                     : pathname.startsWith(link.href);
                 return (

@@ -1,6 +1,36 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/i18n/dictionaries";
+import { pathForRoute, urlForRoute } from "@/i18n/config";
+
+export async function generateMetadata({
+  params,
+}: PageProps<"/[lang]/services">): Promise<Metadata> {
+  const { lang } = await params;
+  if (!hasLocale(lang)) return {};
+
+  const dict = await getDictionary(lang);
+  const canonical = urlForRoute(lang, "services");
+
+  return {
+    title: dict.services.meta.title,
+    description: dict.services.meta.description,
+    alternates: {
+      canonical,
+      languages: {
+        da: urlForRoute("da", "services"),
+        en: urlForRoute("en", "services"),
+        "x-default": urlForRoute("en", "services"),
+      },
+    },
+    openGraph: {
+      title: dict.services.meta.title,
+      description: dict.services.meta.description,
+      url: canonical,
+    },
+  };
+}
 
 function ServiceIcon({ icon }: { icon: string }) {
   const common = {
@@ -140,7 +170,7 @@ export default async function ServicesPage({
           </p>
           <div className="mt-8">
             <Link
-              href={`/${lang}/pricing`}
+              href={pathForRoute(lang, "pricing")}
               className="inline-flex rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/90"
             >
               {cta.button}

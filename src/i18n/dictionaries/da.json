@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Havenkvist Tech — Next.js & React udviklingsstudie",
-    "description": "Havenkvist Tech bygger hurtige, moderne hjemmesider og webapplikationer med Next.js og React til virksomheder der vil vokse online."
+    "title": "Havenkvist Tech – Webudvikler i Haslev til håndværkere & små virksomheder",
+    "description": "Freelance webudvikler baseret i Haslev. Jeg bygger hurtige, professionelle hjemmesider til håndværkere, snedkere og små virksomheder i Haslev, Faxe, Næstved, Køge og resten af Sjælland."
   },
   "nav": {
     "home": "Forside",
@@ -51,6 +51,10 @@
     }
   },
   "about": {
+    "meta": {
+      "title": "Om mig – Freelance webudvikler i Haslev",
+      "description": "Mød Lucas, fullstack-udvikler og manden bag Havenkvist Tech. Baseret i Haslev og bygger moderne, hurtige hjemmesider til virksomheder på Sjælland."
+    },
     "hero": {
       "label": "Om mig",
       "title": "Kode om dagen, kode om natten",
@@ -99,6 +103,10 @@
     }
   },
   "services": {
+    "meta": {
+      "title": "Ydelser – Hjemmesider til håndværkere & lokale virksomheder",
+      "description": "Skræddersyet webudvikling, vedligeholdelse og performance-optimering til håndværkere, snedkere og små virksomheder i Haslev og omegn."
+    },
     "hero": {
       "label": "Ydelser",
       "title": "Webudvikling der leverer resultater",
@@ -167,6 +175,10 @@
     }
   },
   "pricing": {
+    "meta": {
+      "title": "Priser på hjemmesider – Gennemsigtige pakker",
+      "description": "Se priser på professionelle hjemmesider til små virksomheder og håndværkere. Pakker fra 9.995 kr. – uden skjulte gebyrer. Baseret i Haslev, Sjælland."
+    },
     "hero": {
       "label": "Priser",
       "title": "Gennemsigtige priser, ingen overraskelser",
@@ -241,6 +253,10 @@
     }
   },
   "contact": {
+    "meta": {
+      "title": "Kontakt – Webudvikler i Haslev",
+      "description": "Har du et webprojekt i tankerne? Kontakt Havenkvist Tech i Haslev for en uforpligtende snak om din nye hjemmeside."
+    },
     "hero": {
       "label": "Kontakt",
       "title": "Lad os tale om dit projekt",
@@ -266,7 +282,7 @@
     "columnsNav": "Navigation",
     "columnsContact": "Kontakt",
     "email": "hej@havenkvist.tech",
-    "location": "Danmark · Arbejder med kunder globalt",
+    "location": "Haslev, Danmark · Betjener hele Sjælland",
     "rights": "Alle rettigheder forbeholdes."
   }
 }

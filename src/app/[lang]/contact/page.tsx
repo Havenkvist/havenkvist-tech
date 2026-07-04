@@ -1,6 +1,36 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/i18n/dictionaries";
 import { ContactForm } from "@/components/ContactForm";
+import { urlForRoute } from "@/i18n/config";
+
+export async function generateMetadata({
+  params,
+}: PageProps<"/[lang]/contact">): Promise<Metadata> {
+  const { lang } = await params;
+  if (!hasLocale(lang)) return {};
+
+  const dict = await getDictionary(lang);
+  const canonical = urlForRoute(lang, "contact");
+
+  return {
+    title: dict.contact.meta.title,
+    description: dict.contact.meta.description,
+    alternates: {
+      canonical,
+      languages: {
+        da: urlForRoute("da", "contact"),
+        en: urlForRoute("en", "contact"),
+        "x-default": urlForRoute("en", "contact"),
+      },
+    },
+    openGraph: {
+      title: dict.contact.meta.title,
+      description: dict.contact.meta.description,
+      url: canonical,
+    },
+  };
+}
 
 export default async function ContactPage({
   params,

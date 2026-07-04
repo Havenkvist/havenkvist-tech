@@ -1,6 +1,29 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/i18n/dictionaries";
+import { pathForRoute, urlForRoute } from "@/i18n/config";
+
+export async function generateMetadata({
+  params,
+}: PageProps<"/[lang]">): Promise<Metadata> {
+  const { lang } = await params;
+  if (!hasLocale(lang)) return {};
+
+  const canonical = urlForRoute(lang, "home");
+
+  return {
+    alternates: {
+      canonical,
+      languages: {
+        da: urlForRoute("da", "home"),
+        en: urlForRoute("en", "home"),
+        "x-default": urlForRoute("en", "home"),
+      },
+    },
+    openGraph: { url: canonical },
+  };
+}
 
 export default async function HomePage({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
@@ -32,13 +55,13 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
-                href={`/${lang}/pricing`}
+                href={pathForRoute(lang, "pricing")}
                 className="w-full rounded-full bg-black px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-black/80 sm:w-auto dark:bg-white dark:text-black dark:hover:bg-white/90"
               >
                 {hero.ctaPrimary}
               </Link>
               <Link
-                href={`/${lang}/services`}
+                href={pathForRoute(lang, "services")}
                 className="w-full rounded-full border border-black/10 px-6 py-3 text-center text-sm font-semibold text-black transition-colors hover:bg-black/5 sm:w-auto dark:border-white/15 dark:text-white dark:hover:bg-white/10"
               >
                 {hero.ctaSecondary}
@@ -101,7 +124,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           </p>
           <div className="mt-8">
             <Link
-              href={`/${lang}/contact`}
+              href={pathForRoute(lang, "contact")}
               className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-white/90 dark:bg-black dark:text-white dark:hover:bg-black/80"
             >
               {cta.button}
