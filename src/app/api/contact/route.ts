@@ -2,8 +2,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const CONTACT_TO_EMAIL =
-  process.env.CONTACT_TO_EMAIL ?? "luhavenkvist@yahoo.dk";
+const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL;
 const CONTACT_FROM_EMAIL =
   process.env.CONTACT_FROM_EMAIL ?? "onboarding@resend.dev";
 
@@ -41,8 +40,8 @@ export async function POST(request: Request) {
   }
 
   const resendApiKey = process.env.RESEND_API_KEY;
-  if (!resendApiKey) {
-    console.error("RESEND_API_KEY is not configured");
+  if (!resendApiKey || !CONTACT_TO_EMAIL) {
+    console.error("RESEND_API_KEY or CONTACT_TO_EMAIL is not configured");
     return NextResponse.json({ error: "not_configured" }, { status: 500 });
   }
 
