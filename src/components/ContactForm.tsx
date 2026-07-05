@@ -7,9 +7,11 @@ type Status = "idle" | "sending" | "success" | "error";
 
 export function ContactForm({
   dict,
+  services,
   defaultMessage,
 }: {
   dict: Dictionary["contact"]["form"];
+  services: Dictionary["services"]["list"];
   defaultMessage?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
@@ -28,6 +30,7 @@ export function ContactForm({
         body: JSON.stringify({
           name: data.get("name"),
           email: data.get("email"),
+          service: data.get("service"),
           message: data.get("message"),
           website: data.get("website"),
         }),
@@ -99,6 +102,37 @@ export function ContactForm({
           placeholder={dict.emailPlaceholder}
           className={`mt-2 ${inputClasses}`}
         />
+      </div>
+
+      <div>
+        <label
+          htmlFor="service"
+          className="text-xs font-semibold uppercase tracking-wide text-black/40 dark:text-white/40"
+        >
+          {dict.serviceLabel}
+        </label>
+        <select
+          id="service"
+          name="service"
+          defaultValue=""
+          className={`mt-2 ${inputClasses}`}
+        >
+          <option
+            value=""
+            className="bg-white text-black dark:bg-zinc-900 dark:text-white"
+          >
+            {dict.serviceOptionGeneral}
+          </option>
+          {services.map((service) => (
+            <option
+              key={service.id}
+              value={service.title}
+              className="bg-white text-black dark:bg-zinc-900 dark:text-white"
+            >
+              {service.title}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div>

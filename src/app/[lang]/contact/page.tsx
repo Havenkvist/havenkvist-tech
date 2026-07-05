@@ -41,6 +41,7 @@ export default async function ContactPage({
 
   const dict = await getDictionary(lang);
   const { hero, form } = dict.contact;
+  const services = dict.services.list;
 
   const sp = await searchParams;
   const plan = typeof sp.plan === "string" ? sp.plan : undefined;
@@ -64,7 +65,11 @@ export default async function ContactPage({
         </div>
 
         <div className="mt-12 rounded-2xl border border-black/5 bg-white p-8 shadow-sm sm:p-10 dark:border-white/10 dark:bg-white/[0.03]">
-          <ContactForm dict={form} defaultMessage={defaultMessage} />
+          <ContactForm
+            dict={form}
+            services={services}
+            defaultMessage={defaultMessage}
+          />
         </div>
       </div>
     </section>

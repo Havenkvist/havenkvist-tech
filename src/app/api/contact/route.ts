@@ -2,7 +2,8 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const CONTACT_TO_EMAIL = process.env.CONTACT_TO_EMAIL ?? "hey@havenkvist.tech";
+const CONTACT_TO_EMAIL =
+  process.env.CONTACT_TO_EMAIL ?? "luhavenkvist@yahoo.dk";
 const CONTACT_FROM_EMAIL =
   process.env.CONTACT_FROM_EMAIL ?? "onboarding@resend.dev";
 
@@ -13,7 +14,10 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "invalid_body" }, { status: 400 });
   }
 
-  const { name, email, message, website } = body as Record<string, unknown>;
+  const { name, email, message, service, website } = body as Record<
+    string,
+    unknown
+  >;
 
   // Honeypot: real visitors never fill this hidden field, bots often do.
   if (typeof website === "string" && website.trim() !== "") {
@@ -24,12 +28,14 @@ export async function POST(request: Request) {
     typeof name !== "string" ||
     typeof email !== "string" ||
     typeof message !== "string" ||
+    (service !== undefined && typeof service !== "string") ||
     name.trim().length < 2 ||
     name.length > 200 ||
     !EMAIL_RE.test(email) ||
     email.length > 200 ||
     message.trim().length < 10 ||
-    message.length > 5000
+    message.length > 5000 ||
+    (typeof service === "string" && service.length > 200)
   ) {
     return NextResponse.json({ error: "invalid_fields" }, { status: 400 });
   }
@@ -42,12 +48,17 @@ export async function POST(request: Request) {
 
   const resend = new Resend(resendApiKey);
 
+  const serviceLine =
+    typeof service === "string" && service.trim() !== ""
+      ? `Service: ${service}\n`
+      : "";
+
   const { error } = await resend.emails.send({
     from: `Havenkvist Tech <${CONTACT_FROM_EMAIL}>`,
     to: CONTACT_TO_EMAIL,
     replyTo: email,
     subject: `New contact form message from ${name}`,
-    text: `From: ${name} <${email}>\n\n${message}`,
+    text: `From: ${name} <${email}>\n${serviceLine}\n${message}`,
   });
 
   if (error) {

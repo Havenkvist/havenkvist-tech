@@ -114,6 +114,7 @@
     },
     "list": [
       {
+        "id": "web-development",
         "icon": "code",
         "title": "Webudvikling (Next.js/React)",
         "description": "Skræddersyede hjemmesider og webapplikationer bygget med Next.js og React — moderne, hurtige og klar til at vokse med din forretning.",
@@ -125,6 +126,7 @@
         ]
       },
       {
+        "id": "maintenance-support",
         "icon": "maintenance",
         "title": "Vedligeholdelse & support",
         "description": "Løbende teknisk vedligeholdelse, så din hjemmeside altid er opdateret, sikker og fejlfri — uden at du selv skal tænke på det.",
@@ -136,6 +138,7 @@
         ]
       },
       {
+        "id": "performance-optimization",
         "icon": "performance",
         "title": "Performance-optimering",
         "description": "Hurtigere hjemmesider betyder bedre brugeroplevelse, højere konvertering og bedre placering i søgemaskiner.",
@@ -267,6 +270,8 @@
       "namePlaceholder": "Dit navn",
       "emailLabel": "Email",
       "emailPlaceholder": "dig@virksomhed.dk",
+      "serviceLabel": "Ydelse",
+      "serviceOptionGeneral": "Generel henvendelse / ved ikke",
       "messageLabel": "Besked",
       "messagePlaceholder": "Fortæl mig om dit projekt...",
       "planPrefix": "Hej, jeg er interesseret i",
@@ -281,7 +286,7 @@
     "tagline": "Freelance webudvikling med fokus på performance, design og resultater.",
     "columnsNav": "Navigation",
     "columnsContact": "Kontakt",
-    "email": "hej@havenkvist.tech",
+    "email": "luhavenkvist@yahoo.dk",
     "location": "Haslev, Danmark · Betjener hele Sjælland",
     "rights": "Alle rettigheder forbeholdes."
   }

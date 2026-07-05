@@ -114,6 +114,7 @@
     },
     "list": [
       {
+        "id": "web-development",
         "icon": "code",
         "title": "Web Development (Next.js/React)",
         "description": "Custom websites and web applications built with Next.js and React — modern, fast, and ready to grow with your business.",
@@ -125,6 +126,7 @@
         ]
       },
       {
+        "id": "maintenance-support",
         "icon": "maintenance",
         "title": "Maintenance & Support",
         "description": "Ongoing technical maintenance so your website stays up to date, secure, and bug-free — without you having to think about it.",
@@ -136,6 +138,7 @@
         ]
       },
       {
+        "id": "performance-optimization",
         "icon": "performance",
         "title": "Performance Optimization",
         "description": "Faster websites mean better user experience, higher conversion, and better search engine rankings.",
@@ -267,6 +270,8 @@
       "namePlaceholder": "Your name",
       "emailLabel": "Email",
       "emailPlaceholder": "you@company.com",
+      "serviceLabel": "Service",
+      "serviceOptionGeneral": "General inquiry / not sure",
       "messageLabel": "Message",
       "messagePlaceholder": "Tell me about your project...",
       "planPrefix": "Hi, I'm interested in the",
@@ -281,7 +286,7 @@
     "tagline": "Freelance web development focused on performance, design, and results.",
     "columnsNav": "Navigation",
     "columnsContact": "Contact",
-    "email": "hey@havenkvist.tech",
+    "email": "luhavenkvist@yahoo.dk",
     "location": "Haslev, Denmark · Serving all of Zealand",
     "rights": "All rights reserved."
   }
