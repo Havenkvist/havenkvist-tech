@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Havenkvist Tech
 
-## Getting Started
+Marketing site and contact funnel for Havenkvist Tech, a freelance fullstack
+web development business based in Haslev, Denmark. Built with Next.js
+(App Router) and TypeScript.
 
-First, run the development server:
+## Domain-based i18n
+
+There are no `/da/` or `/en/` URL prefixes. Language is selected by hostname
+and rewritten internally by `src/proxy.ts`:
+
+- `havenkvist-tech.dk` → Danish (`da`), localized slugs (e.g. `/priser`)
+- `havenkvist-tech.com` → English (`en`), localized slugs (e.g. `/pricing`)
+
+Locally (or on any other hostname), the locale falls back to a `NEXT_LOCALE`
+cookie so both languages can still be previewed. Locale config, route slugs,
+and canonical URL helpers live in `src/i18n/config.ts`; translated strings are
+in `src/i18n/dictionaries/{da,en}.json`.
+
+Pages live under `src/app/[lang]/` (home, about, services, portfolio,
+pricing, contact) and are reached only via the rewritten paths above.
+
+## Tech stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript (strict mode)
+- **Styling:** Tailwind CSS v4
+- **Email:** [Resend](https://resend.com), via the route handler at
+  `src/app/api/contact/route.ts`
+- **Analytics:** `@vercel/analytics`
+- **Deployment:** Vercel (Hobby plan)
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). Use the language
+switcher or the `NEXT_LOCALE` cookie to preview the other locale, since
+domain-based routing doesn't apply on localhost.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copy `.env.example` to `.env.local` and fill in the values:
 
-## Learn More
+| Variable | Purpose |
+| --- | --- |
+| `RESEND_API_KEY` | Required to send contact form emails via Resend. |
+| `CONTACT_TO_EMAIL` | Inbox the contact form delivers to. |
+| `CONTACT_FROM_EMAIL` | Verified "from" address (use Resend's shared `onboarding@resend.dev` sender until a custom domain is verified). |
+| `GOOGLE_SITE_VERIFICATION` | Optional Google Search Console verification token. |
 
-To learn more about Next.js, take a look at the following resources:
+Secrets are never committed; in production they're managed via the Vercel
+dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Automatic production deployments are disabled. Pushes to `main` build as
+Vercel **Preview** deployments; a build is manually promoted to Production
+from the Vercel dashboard once a feature is complete.
 
-## Deploy on Vercel
+## Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run dev     # start the dev server
+npm run build   # production build
+npm run start   # serve the production build
+npm run lint    # eslint
+```
