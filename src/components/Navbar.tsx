@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { pathForRoute, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Logo } from "./Logo";
 
 export function Navbar({
   locale,
@@ -30,9 +31,10 @@ export function Navbar({
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link
           href={pathForRoute(locale, "home")}
-          className="text-lg font-semibold tracking-tight text-black dark:text-white"
+          className="flex items-center gap-2 text-lg font-semibold tracking-tight text-black dark:text-white"
           onClick={() => setOpen(false)}
         >
+          <Logo className="h-8 w-8 shrink-0" />
           Havenkvist<span className="text-blue-600 dark:text-blue-400">Tech</span>
         </Link>
 
