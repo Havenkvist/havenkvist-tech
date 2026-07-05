@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/i18n/dictionaries";
 import { pathForRoute, urlForRoute } from "@/i18n/config";
+import { education } from "@/data/education";
 
 export async function generateMetadata({
   params,
@@ -39,7 +40,7 @@ export default async function AboutPage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang);
-  const { hero, story, values, contact, cta } = dict.about;
+  const { hero, story, education: educationDict, values, contact, cta } = dict.about;
 
   return (
     <>
@@ -74,6 +75,50 @@ export default async function AboutPage({
                 {paragraph}
               </p>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-black/5 py-20 dark:border-white/10">
+        <div className="mx-auto max-w-3xl px-6">
+          <h2 className="text-2xl font-semibold tracking-tight text-black sm:text-3xl dark:text-white">
+            {educationDict.title}
+          </h2>
+          <div className="mt-8 flex flex-col gap-5">
+            {education.map((entry) => {
+              const content = entry.content[lang];
+              return (
+                <div
+                  key={entry.id}
+                  className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.03]"
+                >
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h3 className="font-semibold text-black dark:text-white">
+                      {content.program}
+                    </h3>
+                    <span
+                      className={`rounded-full px-2 py-0.5 text-xs font-medium ${
+                        entry.completed
+                          ? "bg-blue-600/10 text-blue-600 dark:bg-blue-400/10 dark:text-blue-300"
+                          : "bg-black/5 text-black/60 dark:bg-white/10 dark:text-white/60"
+                      }`}
+                    >
+                      {entry.completed
+                        ? educationDict.completedLabel
+                        : educationDict.partialLabel}
+                    </span>
+                  </div>
+                  <p className="mt-1 text-sm text-black/60 dark:text-white/60">
+                    {content.institution}
+                  </p>
+                  {content.note && (
+                    <p className="mt-1 text-xs text-black/40 dark:text-white/40">
+                      {content.note}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { pathForRoute, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ThemeToggle } from "./ThemeToggle";
 import { Logo } from "./Logo";
 
 export function Navbar({
@@ -22,6 +23,7 @@ export function Navbar({
     { href: pathForRoute(locale, "home"), label: nav.home },
     { href: pathForRoute(locale, "about"), label: nav.about },
     { href: pathForRoute(locale, "services"), label: nav.services },
+    { href: pathForRoute(locale, "portfolio"), label: nav.portfolio },
     { href: pathForRoute(locale, "pricing"), label: nav.pricing },
     { href: pathForRoute(locale, "contact"), label: nav.contact },
   ];
@@ -61,6 +63,7 @@ export function Navbar({
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
+          <ThemeToggle label={nav.toggleTheme} />
           <LanguageSwitcher locale={locale} />
           <Link
             href={pathForRoute(locale, "pricing")}
@@ -104,7 +107,10 @@ export function Navbar({
             ))}
           </nav>
           <div className="mt-5 flex items-center justify-between">
-            <LanguageSwitcher locale={locale} />
+            <div className="flex items-center gap-3">
+              <ThemeToggle label={nav.toggleTheme} />
+              <LanguageSwitcher locale={locale} />
+            </div>
             <Link
               href={pathForRoute(locale, "pricing")}
               onClick={() => setOpen(false)}

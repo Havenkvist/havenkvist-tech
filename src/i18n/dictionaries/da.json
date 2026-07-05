@@ -7,9 +7,11 @@
     "home": "Forside",
     "about": "Om mig",
     "services": "Ydelser",
+    "portfolio": "Projekter",
     "pricing": "Priser",
     "contact": "Kontakt",
-    "cta": "Få et tilbud"
+    "cta": "Få et tilbud",
+    "toggleTheme": "Skift tema"
   },
   "home": {
     "hero": {
@@ -69,6 +71,11 @@
         "At dele min tid mellem to økosystemer holder mig skarp. Den disciplin og enkelhed, jeg værdsætter i Elixir, præger den måde, jeg skriver React på — forudsigelig state, tydelig datastrøm og kode, der ikke overrasker dig om et halvt år.",
         "Når jeg ikke er på mit daglige arbejde eller i gang med kundeprojekter, finder du mig typisk i gang med at finpudse netop denne side, læse op på webperformance eller eksperimentere med de nyeste Next.js-funktioner."
       ]
+    },
+    "education": {
+      "title": "Uddannelse",
+      "completedLabel": "Afsluttet",
+      "partialLabel": "Ikke afsluttet"
     },
     "values": {
       "title": "Sådan arbejder jeg",
@@ -175,6 +182,41 @@
       "title": "Har du et projekt i tankerne?",
       "body": "Lad os finde ud af, hvilken løsning der passer bedst til dine behov og budget.",
       "button": "Se priser"
+    }
+  },
+  "portfolio": {
+    "meta": {
+      "title": "Projekter – Udvalgte Cases",
+      "description": "Et udvalg af professionelle projekter, fra beskedsystemer i sundhedssektoren til realtids fullstack-webapplikationer og selve denne platform."
+    },
+    "hero": {
+      "label": "Projekter",
+      "title": "Udvalgte projekter",
+      "subtitle": "Et indblik i professionelt og personligt arbejde, der spænder fra sundhedssystemer til realtidsapplikationer og selve denne platform."
+    },
+    "labels": {
+      "role": "Rolle",
+      "technologies": "Teknologier",
+      "current": "Nuværende",
+      "types": {
+        "employment": "Fast job",
+        "freelance": "Freelance-projekt",
+        "personal": "Personligt projekt"
+      }
+    },
+    "testimonials": {
+      "title": "Hvad kunderne siger"
+    },
+    "sourceLabels": {
+      "trustpilot": "Trustpilot-anmeldelse",
+      "google": "Google-anmeldelse",
+      "linkedin": "LinkedIn-anbefaling",
+      "direct": "Kundeanmeldelse"
+    },
+    "cta": {
+      "title": "Har du et lignende projekt i tankerne?",
+      "body": "Lad os tale om, hvad du er i gang med at bygge, og hvordan jeg kan hjælpe det til at blive til virkelighed.",
+      "button": "Kontakt mig"
     }
   },
   "pricing": {

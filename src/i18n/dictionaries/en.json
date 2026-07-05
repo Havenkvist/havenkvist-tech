@@ -7,9 +7,11 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "portfolio": "Projects",
     "pricing": "Pricing",
     "contact": "Contact",
-    "cta": "Get a quote"
+    "cta": "Get a quote",
+    "toggleTheme": "Toggle theme"
   },
   "home": {
     "hero": {
@@ -69,6 +71,11 @@
         "Splitting my time between two ecosystems keeps me sharp. The discipline and simplicity I value in Elixir shapes how I write React — predictable state, clear data flow, and code that won't surprise you six months from now.",
         "When I'm not at my day job or working on client projects, you'll usually find me refining this very site, reading up on web performance, or experimenting with the newest Next.js features."
       ]
+    },
+    "education": {
+      "title": "Education",
+      "completedLabel": "Completed",
+      "partialLabel": "Not completed"
     },
     "values": {
       "title": "How I work",
@@ -175,6 +182,41 @@
       "title": "Have a project in mind?",
       "body": "Let's find out which solution fits your needs and budget best.",
       "button": "See pricing"
+    }
+  },
+  "portfolio": {
+    "meta": {
+      "title": "Portfolio – Selected Projects",
+      "description": "A selection of professional projects, from healthcare messaging systems to real-time fullstack web applications and this very platform."
+    },
+    "hero": {
+      "label": "Portfolio",
+      "title": "Selected projects",
+      "subtitle": "A look at professional and personal work spanning healthcare systems, real-time applications, and this platform itself."
+    },
+    "labels": {
+      "role": "Role",
+      "technologies": "Technologies",
+      "current": "Current",
+      "types": {
+        "employment": "Day job",
+        "freelance": "Freelance project",
+        "personal": "Personal project"
+      }
+    },
+    "testimonials": {
+      "title": "What clients say"
+    },
+    "sourceLabels": {
+      "trustpilot": "Trustpilot review",
+      "google": "Google review",
+      "linkedin": "LinkedIn recommendation",
+      "direct": "Client review"
+    },
+    "cta": {
+      "title": "Have a similar project in mind?",
+      "body": "Let's talk about what you're building and how I can help bring it to life.",
+      "button": "Get in touch"
     }
   },
   "pricing": {

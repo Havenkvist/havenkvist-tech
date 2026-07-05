@@ -16,7 +16,7 @@ export const localeDomains: Record<Locale, string> = {
   en: "https://havenkvist-tech.com",
 };
 
-export const routeKeys = ["home", "about", "services", "pricing", "contact"] as const;
+export const routeKeys = ["home", "about", "services", "portfolio", "pricing", "contact"] as const;
 
 export type RouteKey = (typeof routeKeys)[number];
 
@@ -25,6 +25,7 @@ export const routeSlugs: Record<RouteKey, Record<Locale, string>> = {
   home: { da: "", en: "" },
   about: { da: "om-mig", en: "about" },
   services: { da: "ydelser", en: "services" },
+  portfolio: { da: "projekter", en: "projects" },
   pricing: { da: "priser", en: "pricing" },
   contact: { da: "kontakt", en: "contact" },
 };
