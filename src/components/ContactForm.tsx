@@ -10,10 +10,12 @@ export function ContactForm({
   dict,
   services,
   defaultMessage,
+  plan,
 }: {
   dict: Dictionary["contact"]["form"];
   services: Dictionary["services"]["list"];
   defaultMessage?: string;
+  plan?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
 
@@ -34,6 +36,7 @@ export function ContactForm({
           service: data.get("service"),
           message: data.get("message"),
           website: data.get("website"),
+          plan: data.get("plan"),
         }),
       });
 
@@ -41,6 +44,7 @@ export function ContactForm({
 
       track("contact_form_submitted", {
         service: (data.get("service") as string) || "general",
+        ...(plan ? { plan } : {}),
       });
       setStatus("success");
       form.reset();
@@ -70,6 +74,18 @@ export function ContactForm({
         aria-hidden="true"
         className="absolute left-[-9999px] h-0 w-0 opacity-0"
       />
+
+      {plan && (
+        <div className="flex items-center justify-between rounded-lg border border-blue-600/20 bg-blue-600/5 px-4 py-2.5 text-sm dark:border-blue-400/20 dark:bg-blue-400/5">
+          <span className="text-black/50 dark:text-white/50">
+            {dict.planNoticeLabel}
+          </span>
+          <span className="font-semibold text-blue-600 dark:text-blue-400">
+            {plan}
+          </span>
+          <input type="hidden" name="plan" value={plan} />
+        </div>
+      )}
 
       <div>
         <label

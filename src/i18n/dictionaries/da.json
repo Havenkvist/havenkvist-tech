@@ -318,6 +318,7 @@
       "messagePlaceholder": "Fortæl mig om dit projekt...",
       "planPrefix": "Hej, jeg er interesseret i",
       "planSuffix": "-pakken. Kan du fortælle mig mere?",
+      "planNoticeLabel": "Valgt pakke",
       "submit": "Send besked",
       "sending": "Sender...",
       "success": "Tak for din henvendelse! Jeg vender tilbage inden for 24 timer.",

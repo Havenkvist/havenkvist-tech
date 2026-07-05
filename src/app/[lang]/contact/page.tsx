@@ -69,6 +69,7 @@ export default async function ContactPage({
             dict={form}
             services={services}
             defaultMessage={defaultMessage}
+            plan={plan}
           />
         </div>
       </div>

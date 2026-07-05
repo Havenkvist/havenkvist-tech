@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "invalid_body" }, { status: 400 });
   }
 
-  const { name, email, message, service, website } = body as Record<
+  const { name, email, message, service, plan, website } = body as Record<
     string,
     unknown
   >;
@@ -28,13 +28,15 @@ export async function POST(request: Request) {
     typeof email !== "string" ||
     typeof message !== "string" ||
     (service !== undefined && typeof service !== "string") ||
+    (plan !== undefined && typeof plan !== "string") ||
     name.trim().length < 2 ||
     name.length > 200 ||
     !EMAIL_RE.test(email) ||
     email.length > 200 ||
     message.trim().length < 10 ||
     message.length > 5000 ||
-    (typeof service === "string" && service.length > 200)
+    (typeof service === "string" && service.length > 200) ||
+    (typeof plan === "string" && plan.length > 200)
   ) {
     return NextResponse.json({ error: "invalid_fields" }, { status: 400 });
   }
@@ -51,13 +53,15 @@ export async function POST(request: Request) {
     typeof service === "string" && service.trim() !== ""
       ? `Service: ${service}\n`
       : "";
+  const planLine =
+    typeof plan === "string" && plan.trim() !== "" ? `Plan: ${plan}\n` : "";
 
   const { error } = await resend.emails.send({
     from: `Havenkvist Tech <${CONTACT_FROM_EMAIL}>`,
     to: CONTACT_TO_EMAIL,
     replyTo: email,
     subject: `New contact form message from ${name}`,
-    text: `From: ${name} <${email}>\n${serviceLine}\n${message}`,
+    text: `From: ${name} <${email}>\n${serviceLine}${planLine}\n${message}`,
   });
 
   if (error) {

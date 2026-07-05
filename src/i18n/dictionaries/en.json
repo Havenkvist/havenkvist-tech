@@ -318,6 +318,7 @@
       "messagePlaceholder": "Tell me about your project...",
       "planPrefix": "Hi, I'm interested in the",
       "planSuffix": "package. Could you tell me more?",
+      "planNoticeLabel": "Selected plan",
       "submit": "Send message",
       "sending": "Sending...",
       "success": "Thanks for reaching out! I'll get back to you within 24 hours.",
