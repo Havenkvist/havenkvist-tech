@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 import { locales, localeDomains } from "@/i18n/config";
 import { getDictionary, hasLocale } from "@/i18n/dictionaries";
@@ -86,6 +87,7 @@ export default async function RootLayout({
         <Navbar locale={lang} nav={dict.nav} />
         <main className="flex-1">{children}</main>
         <Footer locale={lang} dict={dict} />
+        <Analytics />
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 import type { Dictionary } from "@/i18n/dictionaries";
 
 type Status = "idle" | "sending" | "success" | "error";
@@ -38,6 +39,9 @@ export function ContactForm({
 
       if (!res.ok) throw new Error("request_failed");
 
+      track("contact_form_submitted", {
+        service: (data.get("service") as string) || "general",
+      });
       setStatus("success");
       form.reset();
     } catch {
