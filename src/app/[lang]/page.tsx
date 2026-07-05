@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/i18n/dictionaries";
 import { pathForRoute, urlForRoute } from "@/i18n/config";
+import CodeBackdrop from "@/components/CodeBackdrop";
 
 export async function generateMetadata({
   params,
@@ -34,50 +35,57 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
 
   return (
     <>
-      <section className="relative overflow-hidden">
+      <section className="relative isolate overflow-hidden bg-zinc-950">
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-blue-100 via-white to-white dark:from-blue-950/40 dark:via-black dark:to-black"
+          className="pointer-events-none absolute inset-0 -z-30 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-blue-500/20 via-zinc-950 to-zinc-950"
+        />
+        <CodeBackdrop />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[68%] w-[54%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-950 blur-[60px]"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-transparent to-zinc-950"
         />
         <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center rounded-full border border-blue-600/20 bg-blue-600/5 px-3 py-1 text-xs font-medium text-blue-700 dark:border-blue-400/30 dark:bg-blue-400/10 dark:text-blue-300">
+            <span className="inline-flex items-center rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-xs font-medium text-blue-300">
               {hero.badge}
             </span>
-            <h1 className="mt-6 text-4xl font-semibold tracking-tight text-black sm:text-6xl dark:text-white">
+            <h1 className="mt-6 text-4xl font-semibold tracking-tight text-white sm:text-6xl">
               {hero.title}{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
                 {hero.titleHighlight}
               </span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-black/60 dark:text-white/60">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-white/60">
               {hero.subtitle}
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href={pathForRoute(lang, "pricing")}
-                className="w-full rounded-full bg-black px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-black/80 sm:w-auto dark:bg-white dark:text-black dark:hover:bg-white/90"
+                className="w-full rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-black transition-colors hover:bg-white/90 sm:w-auto"
               >
                 {hero.ctaPrimary}
               </Link>
               <Link
                 href={pathForRoute(lang, "services")}
-                className="w-full rounded-full border border-black/10 px-6 py-3 text-center text-sm font-semibold text-black transition-colors hover:bg-black/5 sm:w-auto dark:border-white/15 dark:text-white dark:hover:bg-white/10"
+                className="w-full rounded-full border border-white/15 px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-white/10 sm:w-auto"
               >
                 {hero.ctaSecondary}
               </Link>
             </div>
           </div>
 
-          <dl className="mx-auto mt-20 grid max-w-3xl grid-cols-1 gap-8 border-t border-black/5 pt-10 sm:grid-cols-3 dark:border-white/10">
+          <dl className="mx-auto mt-20 grid max-w-3xl grid-cols-1 gap-8 border-t border-white/10 pt-10 sm:grid-cols-3">
             {hero.stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <dt className="text-3xl font-semibold text-black dark:text-white">
+                <dt className="text-3xl font-semibold text-white">
                   {stat.value}
                 </dt>
-                <dd className="mt-1 text-sm text-black/50 dark:text-white/50">
-                  {stat.label}
-                </dd>
+                <dd className="mt-1 text-sm text-white/50">{stat.label}</dd>
               </div>
             ))}
           </dl>
