@@ -6,9 +6,8 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "services": "Services",
     "portfolio": "Projects",
-    "pricing": "Pricing",
+    "pricing": "Services & Pricing",
     "contact": "Contact",
     "cta": "Get a quote",
     "toggleTheme": "Toggle theme"
@@ -20,7 +19,7 @@
       "titleHighlight": "grow with your business",
       "subtitle": "Havenkvist Tech is a freelance development studio designing and building fast, scalable websites and web applications with modern technology — tailored to your business.",
       "ctaPrimary": "Start your project",
-      "ctaSecondary": "See our services",
+      "ctaSecondary": "See our work",
       "stats": [
         { "value": "<100ms", "label": "Average response time" },
         { "value": "100/100", "label": "Lighthouse performance" },
@@ -110,15 +109,6 @@
     }
   },
   "services": {
-    "meta": {
-      "title": "Services – Websites for Tradespeople & Local Businesses",
-      "description": "Custom web development, maintenance, and performance optimization for tradespeople, craftsmen, and small businesses in and around Haslev, Denmark."
-    },
-    "hero": {
-      "label": "Services",
-      "title": "Web development that delivers results",
-      "subtitle": "From new websites to ongoing maintenance and performance optimization — I handle the technical side so you can focus on your business."
-    },
     "list": [
       {
         "id": "web-development",
@@ -130,7 +120,8 @@
           "Server-side rendering for optimal SEO",
           "Responsive design across all devices",
           "Integration with CMS, payments, and APIs"
-        ]
+        ],
+        "addon": null
       },
       {
         "id": "maintenance-support",
@@ -142,7 +133,14 @@
           "Security monitoring and bug fixes",
           "Backups and troubleshooting",
           "Priority support for urgent issues"
-        ]
+        ],
+        "addon": {
+          "label": "Optional add-on",
+          "price": "4,000 kr.",
+          "period": "per year",
+          "body": "I'll make sure your site keeps running, including hosting and domain renewal, so you never have to think about it.",
+          "note": "Skip this, and once I've helped you get hosting and a domain set up initially, you're on your own for renewals, uptime, and updates going forward."
+        }
       },
       {
         "id": "performance-optimization",
@@ -154,7 +152,8 @@
           "Image and asset optimization",
           "Code splitting and caching strategy",
           "Ongoing performance monitoring"
-        ]
+        ],
+        "addon": null
       }
     ],
     "process": {
@@ -177,11 +176,6 @@
           "body": "After launch, I'm ready with support and further development as needed."
         }
       ]
-    },
-    "cta": {
-      "title": "Have a project in mind?",
-      "body": "Let's find out which solution fits your needs and budget best.",
-      "button": "See pricing"
     }
   },
   "portfolio": {
@@ -221,20 +215,22 @@
   },
   "pricing": {
     "meta": {
-      "title": "Website Pricing – Transparent Packages",
-      "description": "See pricing for professional small business websites. Packages starting at $1,395, no hidden fees. Based in Haslev, Denmark."
+      "title": "Services & Pricing – Websites for Tradespeople & Local Businesses",
+      "description": "Web development, maintenance, and performance optimization for small businesses, with transparent pricing starting at $1,395 and no hidden fees. Based in Haslev, Denmark."
     },
     "hero": {
-      "label": "Pricing",
-      "title": "Transparent pricing, no surprises",
-      "subtitle": "Choose the package that fits your project. All packages can be tailored — get in touch for a custom quote."
+      "label": "Services & Pricing",
+      "title": "What I build, and what it costs",
+      "subtitle": "From new websites to ongoing maintenance and performance work — see what's included and what it costs, with no hidden fees."
     },
+    "servicesTitle": "What I offer",
     "tiers": [
       {
         "name": "Basic",
         "price": "1,395",
         "period": "one-time",
         "description": "Perfect for entrepreneurs and small businesses that need a professional online presence.",
+        "details": "A clean, professional website with up to 5 pages — perfect for a homepage, services, about, and contact. It works well on phones and tablets, shows up properly in Google searches, and includes a working contact form so customers can reach you. For the first month after launch, I'll fix anything that comes up at no extra cost.",
         "features": [
           "Up to 5 pages",
           "Responsive design",
@@ -250,6 +246,7 @@
         "price": "2,795",
         "period": "one-time",
         "description": "For businesses that need custom functionality and better performance.",
+        "details": "A larger, fully custom-designed website with up to 12 pages, built specifically around your business rather than a template. You'll get a simple admin panel (a \"CMS\") so you can update text and photos yourself without knowing how to code. I'll also fine-tune the site so it loads fast and ranks well in search engines, and set it up in both Danish and English if you serve customers in both languages. Includes 3 months of support after launch.",
         "features": [
           "Up to 12 pages",
           "Custom UI/UX design",
@@ -266,6 +263,7 @@
         "price": "Contact me",
         "period": "custom quote",
         "description": "For complex projects, web applications, and businesses with specific requirements.",
+        "details": "For businesses that need more than a website — think booking systems, customer portals, or tools connected to other software you already use, like accounting or inventory. There's no limit on pages, and I'll connect the site to whatever other systems your business relies on. Performance and security are tailored specifically to your setup, and you get an ongoing maintenance agreement with priority support, so problems get solved fast.",
         "features": [
           "Unlimited pages",
           "Custom web application",
@@ -278,7 +276,7 @@
         "highlighted": false
       }
     ],
-    "note": "All prices are excluding VAT. Hosting and domain are not included, but I'm happy to help with setup.",
+    "note": "All prices are excluding VAT. Hosting and domain are not included in the packages below — I'll help you set them up, or you can add the Maintenance & Support plan (see \"What I offer\" below) to have me handle it all for you, ongoing.",
     "faq": {
       "title": "Frequently asked questions",
       "items": [
@@ -295,6 +293,11 @@
           "answer": "Yes, projects are typically invoiced in two installments: 50% at kickoff and 50% at launch. Get in touch to arrange details."
         }
       ]
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "body": "Tell me about your project and I'll get back to you within 24 hours with next steps.",
+      "button": "Get in touch"
     }
   },
   "contact": {

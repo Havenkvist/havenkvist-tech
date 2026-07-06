@@ -71,7 +71,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
                 {hero.ctaPrimary}
               </Link>
               <Link
-                href={pathForRoute(lang, "services")}
+                href={pathForRoute(lang, "portfolio")}
                 className="w-full rounded-full border border-white/15 px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-white/10 sm:w-auto"
               >
                 {hero.ctaSecondary}

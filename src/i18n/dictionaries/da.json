@@ -6,9 +6,8 @@
   "nav": {
     "home": "Forside",
     "about": "Om mig",
-    "services": "Ydelser",
     "portfolio": "Projekter",
-    "pricing": "Priser",
+    "pricing": "Ydelser & priser",
     "contact": "Kontakt",
     "cta": "Få et tilbud",
     "toggleTheme": "Skift tema"
@@ -20,7 +19,7 @@
       "titleHighlight": "vokser med din forretning",
       "subtitle": "Havenkvist Tech er et freelance udviklingsstudie, der designer og bygger hurtige, skalerbare hjemmesider og webapplikationer med moderne teknologi — skræddersyet til din virksomhed.",
       "ctaPrimary": "Start dit projekt",
-      "ctaSecondary": "Se vores ydelser",
+      "ctaSecondary": "Se vores arbejde",
       "stats": [
         { "value": "<100ms", "label": "Gennemsnitlig svartid" },
         { "value": "100/100", "label": "Lighthouse performance" },
@@ -110,15 +109,6 @@
     }
   },
   "services": {
-    "meta": {
-      "title": "Ydelser – Hjemmesider til håndværkere & lokale virksomheder",
-      "description": "Skræddersyet webudvikling, vedligeholdelse og performance-optimering til håndværkere, snedkere og små virksomheder i Haslev og omegn."
-    },
-    "hero": {
-      "label": "Ydelser",
-      "title": "Webudvikling der leverer resultater",
-      "subtitle": "Fra nye hjemmesider til løbende vedligeholdelse og performance-optimering — jeg hjælper dig med den tekniske del, så du kan fokusere på din forretning."
-    },
     "list": [
       {
         "id": "web-development",
@@ -130,7 +120,8 @@
           "Server-side rendering for optimal SEO",
           "Responsivt design til alle enheder",
           "Integration med CMS, betaling og API'er"
-        ]
+        ],
+        "addon": null
       },
       {
         "id": "maintenance-support",
@@ -142,7 +133,14 @@
           "Sikkerhedsovervågning og fejlrettelser",
           "Backup og fejlsøgning",
           "Prioriteret support ved akutte problemer"
-        ]
+        ],
+        "addon": {
+          "label": "Ekstra ydelse",
+          "price": "4.000 kr.",
+          "period": "pr. år",
+          "body": "Jeg sørger for, at din hjemmeside altid kører, inklusiv hosting og fornyelse af domæne, så du ikke selv skal tænke på det.",
+          "note": "Vælger du den fra, hjælper jeg dig med at sætte hosting og domæne op i starten — men derefter står du selv for fornyelser, oppetid og opdateringer."
+        }
       },
       {
         "id": "performance-optimization",
@@ -154,7 +152,8 @@
           "Billede- og asset-optimering",
           "Kodesplitting og caching-strategi",
           "Løbende performance-monitorering"
-        ]
+        ],
+        "addon": null
       }
     ],
     "process": {
@@ -177,11 +176,6 @@
           "body": "Efter lancering er jeg klar med support og videreudvikling efter behov."
         }
       ]
-    },
-    "cta": {
-      "title": "Har du et projekt i tankerne?",
-      "body": "Lad os finde ud af, hvilken løsning der passer bedst til dine behov og budget.",
-      "button": "Se priser"
     }
   },
   "portfolio": {
@@ -221,20 +215,22 @@
   },
   "pricing": {
     "meta": {
-      "title": "Priser på hjemmesider – Gennemsigtige pakker",
-      "description": "Se priser på professionelle hjemmesider til små virksomheder og håndværkere. Pakker fra 9.995 kr. – uden skjulte gebyrer. Baseret i Haslev, Sjælland."
+      "title": "Ydelser & priser – Hjemmesider til håndværkere & lokale virksomheder",
+      "description": "Webudvikling, vedligeholdelse og performance-optimering til små virksomheder, med gennemsigtige priser fra 9.995 kr. og ingen skjulte gebyrer. Baseret i Haslev, Sjælland."
     },
     "hero": {
-      "label": "Priser",
-      "title": "Gennemsigtige priser, ingen overraskelser",
-      "subtitle": "Vælg den pakke der passer til dit projekt. Alle pakker kan tilpasses — kontakt mig for et skræddersyet tilbud."
+      "label": "Ydelser & priser",
+      "title": "Det jeg bygger, og hvad det koster",
+      "subtitle": "Fra nye hjemmesider til løbende vedligeholdelse og performance-arbejde — se hvad der er inkluderet, og hvad det koster, uden skjulte gebyrer."
     },
+    "servicesTitle": "Det jeg tilbyder",
     "tiers": [
       {
         "name": "Basic",
         "price": "9.995",
         "period": "engangsbeløb",
         "description": "Perfekt til iværksættere og mindre virksomheder, der har brug for en professionel tilstedeværelse online.",
+        "details": "En ren og professionel hjemmeside med op til 5 sider — perfekt til forside, ydelser, om os og kontakt. Den fungerer godt på både mobil og tablet, vises korrekt i Google-søgninger, og har en kontaktformular, så kunderne nemt kan skrive til dig. Den første måned efter lancering retter jeg gratis, hvis der opstår problemer.",
         "features": [
           "Op til 5 sider",
           "Responsivt design",
@@ -250,6 +246,7 @@
         "price": "19.995",
         "period": "engangsbeløb",
         "description": "Til virksomheder der har brug for skræddersyede funktioner og bedre performance.",
+        "details": "En større, skræddersyet hjemmeside med op til 12 sider, bygget specifikt til din virksomhed frem for en skabelon. Du får et simpelt redigeringsværktøj (et \"CMS\"), så du selv kan opdatere tekst og billeder uden at kunne kode. Jeg finjusterer også siden, så den loader hurtigt og ranker godt i søgemaskiner, og sætter den op på både dansk og engelsk, hvis du betjener kunder i begge sprog. Inkluderer 3 måneders support efter lancering.",
         "features": [
           "Op til 12 sider",
           "Skræddersyet UI/UX-design",
@@ -266,6 +263,7 @@
         "price": "Kontakt mig",
         "period": "skræddersyet tilbud",
         "description": "Til komplekse projekter, webapplikationer og virksomheder med specifikke krav.",
+        "details": "Til virksomheder der har brug for mere end en hjemmeside — for eksempel bookingsystemer, kundeportaler eller værktøjer der kobles sammen med andre systemer, I allerede bruger, som økonomi eller lager. Der er ingen grænse for antal sider, og jeg kobler siden sammen med de systemer, jeres virksomhed er afhængig af. Performance og sikkerhed skræddersys specifikt til jeres opsætning, og I får en løbende vedligeholdelsesaftale med prioriteret support, så problemer bliver løst hurtigt.",
         "features": [
           "Ubegrænset antal sider",
           "Skræddersyet webapplikation",
@@ -278,7 +276,7 @@
         "highlighted": false
       }
     ],
-    "note": "Alle priser er ekskl. moms. Hosting og domæne er ikke inkluderet, men jeg hjælper gerne med opsætning.",
+    "note": "Alle priser er ekskl. moms. Hosting og domæne er ikke inkluderet i pakkerne nedenfor — jeg hjælper dig med at sætte det op, eller du kan tilføje Vedligeholdelse & support (se \"Det jeg tilbyder\" nedenfor), så jeg står for det hele løbende.",
     "faq": {
       "title": "Ofte stillede spørgsmål",
       "items": [
@@ -295,6 +293,11 @@
           "answer": "Ja, projekter faktureres typisk i to rater: 50% ved opstart og 50% ved lancering. Kontakt mig for at aftale nærmere."
         }
       ]
+    },
+    "cta": {
+      "title": "Klar til at komme i gang?",
+      "body": "Fortæl mig om dit projekt, så vender jeg tilbage inden for 24 timer med næste skridt.",
+      "button": "Kontakt mig"
     }
   },
   "contact": {

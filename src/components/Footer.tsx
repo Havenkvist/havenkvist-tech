@@ -12,7 +12,6 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const links = [
     { href: pathForRoute(locale, "home"), label: dict.nav.home },
     { href: pathForRoute(locale, "about"), label: dict.nav.about },
-    { href: pathForRoute(locale, "services"), label: dict.nav.services },
     { href: pathForRoute(locale, "portfolio"), label: dict.nav.portfolio },
     { href: pathForRoute(locale, "pricing"), label: dict.nav.pricing },
     { href: pathForRoute(locale, "contact"), label: dict.nav.contact },

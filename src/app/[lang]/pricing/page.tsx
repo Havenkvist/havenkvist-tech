@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/i18n/dictionaries";
 import { pathForRoute, urlForRoute } from "@/i18n/config";
+import { ServiceIcon } from "@/components/ServiceIcon";
+import { PricingTiers } from "@/components/PricingTiers";
 
 export async function generateMetadata({
   params,
@@ -39,7 +41,8 @@ export default async function PricingPage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang);
-  const { hero, tiers, note, faq } = dict.pricing;
+  const { hero, servicesTitle, tiers, note, faq, cta } = dict.pricing;
+  const { list, process } = dict.services;
   const currency = lang === "da" ? "kr." : "$";
 
   return (
@@ -58,86 +61,103 @@ export default async function PricingPage({
         </div>
       </section>
 
-      <section className="py-20">
+      <section id="pricing" className="py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="grid gap-8 lg:grid-cols-3">
-            {tiers.map((tier, index) => {
-              const isCustom = index === tiers.length - 1;
-              return (
-                <div
-                  key={tier.name}
-                  className={`relative flex flex-col rounded-2xl border p-8 ${
-                    tier.highlighted
-                      ? "border-blue-600 bg-white shadow-lg ring-1 ring-blue-600 dark:border-blue-400 dark:bg-white/[0.04] dark:ring-blue-400"
-                      : "border-black/5 bg-white shadow-sm dark:border-white/10 dark:bg-white/[0.03]"
-                  }`}
-                >
-                  {tier.highlighted && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-blue-600 px-3 py-1 text-xs font-semibold text-white dark:bg-blue-400 dark:text-black">
-                      {lang === "da" ? "Mest populær" : "Most popular"}
-                    </span>
-                  )}
-
-                  <h3 className="text-xl font-semibold text-black dark:text-white">
-                    {tier.name}
-                  </h3>
-                  <p className="mt-2 text-sm text-black/60 dark:text-white/60">
-                    {tier.description}
-                  </p>
-
-                  <div className="mt-6 flex items-baseline gap-1">
-                    <span className="text-4xl font-semibold tracking-tight text-black dark:text-white">
-                      {isCustom
-                        ? tier.price
-                        : currency === "$"
-                          ? `$${tier.price}`
-                          : `${tier.price} kr.`}
-                    </span>
-                  </div>
-                  <p className="mt-1 text-xs uppercase tracking-wide text-black/40 dark:text-white/40">
-                    {tier.period}
-                  </p>
-
-                  <ul className="mt-8 flex flex-1 flex-col gap-3">
-                    {tier.features.map((feature) => (
-                      <li
-                        key={feature}
-                        className="flex items-start gap-2 text-sm text-black/70 dark:text-white/70"
-                      >
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          className="mt-0.5 shrink-0 text-blue-600 dark:text-blue-400"
-                        >
-                          <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <Link
-                    href={`${pathForRoute(lang, "contact")}?plan=${encodeURIComponent(tier.name)}`}
-                    className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3 text-center text-sm font-semibold transition-colors ${
-                      tier.highlighted
-                        ? "bg-blue-600 text-white hover:bg-blue-700"
-                        : "bg-black text-white hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/90"
-                    }`}
-                  >
-                    {tier.cta}
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
+          <PricingTiers tiers={tiers} lang={lang} currency={currency} />
 
           <p className="mt-10 text-center text-sm text-black/50 dark:text-white/50">
             {note}
           </p>
+        </div>
+      </section>
+
+      <section className="border-t border-black/5 bg-zinc-50 py-20 dark:border-white/10 dark:bg-white/[0.02]">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-center text-3xl font-semibold tracking-tight text-black sm:text-4xl dark:text-white">
+            {process.title}
+          </h2>
+          <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            {process.steps.map((step, index) => (
+              <div key={step.title} className="relative">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-sm font-semibold text-white dark:bg-white dark:text-black">
+                  {index + 1}
+                </div>
+                <h3 className="mt-4 text-lg font-semibold text-black dark:text-white">
+                  {step.title}
+                </h3>
+                <p className="mt-2 text-sm text-black/60 dark:text-white/60">
+                  {step.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-center text-3xl font-semibold tracking-tight text-black sm:text-4xl dark:text-white">
+            {servicesTitle}
+          </h2>
+          <div className="mt-14 grid gap-8 lg:grid-cols-3">
+            {list.map((service) => (
+              <div
+                key={service.title}
+                className="flex flex-col rounded-2xl border border-black/5 bg-white p-8 shadow-sm dark:border-white/10 dark:bg-white/[0.03]"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600/10 text-blue-600 dark:bg-blue-400/10 dark:text-blue-300">
+                  <ServiceIcon icon={service.icon} />
+                </div>
+                <h3 className="mt-6 text-xl font-semibold text-black dark:text-white">
+                  {service.title}
+                </h3>
+                <p className="mt-3 text-sm text-black/60 dark:text-white/60">
+                  {service.description}
+                </p>
+                <ul className="mt-6 flex flex-1 flex-col gap-3">
+                  {service.features.map((feature) => (
+                    <li
+                      key={feature}
+                      className="flex items-start gap-2 text-sm text-black/70 dark:text-white/70"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="mt-0.5 shrink-0 text-blue-600 dark:text-blue-400"
+                      >
+                        <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                {service.addon && (
+                  <div className="mt-6 rounded-xl border border-blue-600/20 bg-blue-600/5 p-4 dark:border-blue-400/20 dark:bg-blue-400/10">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400">
+                      {service.addon.label}
+                    </p>
+                    <p className="mt-1 text-sm font-semibold text-black dark:text-white">
+                      {service.addon.price}{" "}
+                      <span className="font-normal text-black/60 dark:text-white/60">
+                        / {service.addon.period}
+                      </span>
+                    </p>
+                    <p className="mt-2 text-sm text-black/70 dark:text-white/70">
+                      {service.addon.body}
+                    </p>
+                    <p className="mt-2 text-xs text-black/50 dark:text-white/50">
+                      {service.addon.note}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -160,6 +180,25 @@ export default async function PricingPage({
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <h2 className="text-3xl font-semibold tracking-tight text-black sm:text-4xl dark:text-white">
+            {cta.title}
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-black/60 dark:text-white/60">
+            {cta.body}
+          </p>
+          <div className="mt-8">
+            <Link
+              href={pathForRoute(lang, "contact")}
+              className="inline-flex rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/90"
+            >
+              {cta.button}
+            </Link>
           </div>
         </div>
       </section>

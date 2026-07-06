@@ -22,7 +22,6 @@ export function Navbar({
   const links = [
     { href: pathForRoute(locale, "home"), label: nav.home },
     { href: pathForRoute(locale, "about"), label: nav.about },
-    { href: pathForRoute(locale, "services"), label: nav.services },
     { href: pathForRoute(locale, "portfolio"), label: nav.portfolio },
     { href: pathForRoute(locale, "pricing"), label: nav.pricing },
     { href: pathForRoute(locale, "contact"), label: nav.contact },
