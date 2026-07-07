@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { pathForRoute, type Locale } from "@/i18n/config";
 
@@ -43,6 +43,13 @@ export function PricingTiers({
   currency: string;
 }) {
   const [expandedName, setExpandedName] = useState<string | null>(null);
+  const expandedCardRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (expandedName) {
+      expandedCardRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [expandedName]);
 
   const isCustomTier = (tier: Tier) => tiers.indexOf(tier) === tiers.length - 1;
   const formatPrice = (tier: Tier) =>
@@ -65,7 +72,8 @@ export function PricingTiers({
     <div className="flex flex-col gap-8">
       {expandedTier && (
         <div
-          className={`relative flex flex-col rounded-2xl border p-8 md:p-10 ${
+          ref={expandedCardRef}
+          className={`relative flex scroll-mt-24 flex-col rounded-2xl border p-8 md:p-10 ${
             expandedTier.highlighted
               ? "border-blue-600 bg-white shadow-lg ring-1 ring-blue-600 dark:border-blue-400 dark:bg-white/[0.04] dark:ring-blue-400"
               : "border-black/5 bg-white shadow-sm dark:border-white/10 dark:bg-white/[0.03]"
