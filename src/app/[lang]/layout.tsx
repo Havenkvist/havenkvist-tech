@@ -41,6 +41,7 @@ export async function generateMetadata({
     openGraph: {
       siteName: "Havenkvist Tech",
       locale: lang === "da" ? "da_DK" : "en_US",
+      alternateLocale: lang === "da" ? "en_US" : "da_DK",
       type: "website",
     },
     twitter: {
