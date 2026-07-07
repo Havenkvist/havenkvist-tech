@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { pathForRoute, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
-import { Logo } from "./Logo";
 
 export function Navbar({
   locale,
@@ -35,7 +35,13 @@ export function Navbar({
           className="flex items-center gap-2 text-lg font-semibold tracking-tight text-black dark:text-white"
           onClick={() => setOpen(false)}
         >
-          <Logo className="h-8 w-8 shrink-0" />
+          <Image
+            src="/logo.svg"
+            alt="Havenkvist Tech"
+            width={32}
+            height={32}
+            className="h-8 w-8 shrink-0"
+          />
           Havenkvist<span className="text-blue-600 dark:text-blue-400">Tech</span>
         </Link>
 

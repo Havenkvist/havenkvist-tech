@@ -19,7 +19,6 @@ export default function Icon() {
           strokeWidth="3.4"
           strokeLinecap="round"
         />
-        <rect x="14.5" y="14.3" width="3" height="3.4" fill="#93c5fd" />
       </svg>
     ),
     { ...size }

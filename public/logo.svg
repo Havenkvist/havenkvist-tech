@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Havenkvist Tech">
+  <rect width="32" height="32" rx="8" fill="#2563eb" />
+  <path
+    d="M11 8v16M21 8v16M11 16h10"
+    stroke="#ffffff"
+    stroke-width="3.4"
+    stroke-linecap="round"
+  />
+</svg>
