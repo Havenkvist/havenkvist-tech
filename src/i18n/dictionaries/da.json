@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Havenkvist Tech – Webudvikler i Haslev til håndværkere & små virksomheder",
-    "description": "Freelance webudvikler baseret i Haslev. Jeg bygger hurtige, professionelle hjemmesider til håndværkere, snedkere og små virksomheder i Haslev, Faxe, Næstved, Køge og resten af Sjælland."
+    "title": "Havenkvist Tech – Freelance webudvikler i Haslev",
+    "description": "Freelance webudvikler baseret i Haslev. Jeg bygger hurtige, professionelle hjemmesider til håndværkere, mindre erhverv og små virksomheder på hele Sjælland."
   },
   "nav": {
     "home": "Forside",
@@ -29,7 +29,7 @@
     "intro": {
       "label": "Hvorfor Havenkvist Tech",
       "title": "Teknisk håndværk møder forretningsforståelse",
-      "body": "Jeg kombinerer moderne webteknologi med en klar forståelse for, hvad der faktisk driver din forretning fremad. Ingen unødvendig kompleksitet — kun løsninger der virker, indlæser hurtigt og er nemme at vedligeholde.",
+      "body": "Jeg kombinerer moderne webteknologi med en klar forståelse for, hvad der faktisk driver din forretning fremad. Ingen unødvendig kompleksitet — kun løsninger der virker, indlæser lynhurtigt og er nemme at vedligeholde.",
       "points": [
         {
           "title": "Skræddersyet kode",
@@ -41,7 +41,7 @@
         },
         {
           "title": "Direkte samarbejde",
-          "body": "Du taler direkte med den udvikler, der bygger din løsning — ingen mellemled, ingen misforståelser."
+          "body": "Du taler direkte med den udvikler, der bygger din løsning — ingen forvirrende mellemled, ingen misforståelser."
         }
       ]
     },
@@ -54,20 +54,20 @@
   "about": {
     "meta": {
       "title": "Om mig – Freelance webudvikler i Haslev",
-      "description": "Mød Lucas, fullstack-udvikler og manden bag Havenkvist Tech. Baseret i Haslev og bygger moderne, hurtige hjemmesider til virksomheder på Sjælland."
+      "description": "Mød Lucas, fullstack-udvikler og ansigtet bag Havenkvist Tech. Baseret i Haslev og bygger moderne, hurtige hjemmesider til virksomheder på hele Sjælland."
     },
     "hero": {
       "label": "Om mig",
       "title": "Kode om dagen, kode om natten",
-      "subtitle": "Udvikleren bag Havenkvist Tech — og hvorfor dette studie findes."
+      "subtitle": "Udvikleren bag Havenkvist Tech — og hvorfor dette studie eksisterer."
     },
     "story": {
       "label": "Min baggrund",
       "title": "Fullstack-udvikler med en natlig passion for frontend",
       "paragraphs": [
-        "Jeg hedder Lucas og er fullstack-udvikler bosat i Haslev. Om dagen bygger og vedligeholder jeg produktionsapplikationer med Elixir og Phoenix LiveView — systemer, der skal være hurtige, driftsikre og nemme at forstå i stor skala.",
-        "Havenkvist Tech er mit aften- og weekendprojekt — et lille freelance-studie, hvor jeg udforsker den anden side af stacken. Her arbejder jeg primært med React, TypeScript og Next.js og bygger moderne hjemmesider og webapplikationer til kunder, der ønsker en hurtig og gennemført tilstedeværelse online.",
-        "At dele min tid mellem to økosystemer holder mig skarp. Den disciplin og enkelhed, jeg værdsætter i Elixir, præger den måde, jeg skriver React på — forudsigelig state, tydelig datastrøm og kode, der ikke overrasker dig om et halvt år.",
+        "Jeg hedder Lucas og er fullstack-udvikler bosat i Haslev. Om dagen bygger og vedligeholder jeg produktionsapplikationer med Elixir og Phoenix LiveView — systemer, der skal være hurtige, driftsikre og nemme at overskue i stor skala.",
+        "Havenkvist Tech er mit aften- og weekendprojekt — et mindre freelance-studie, hvor jeg udforsker den anden side af stacken. Her arbejder jeg primært med React, TypeScript og Next.js og bygger moderne hjemmesider og webapplikationer til kunder, der ønsker en kompromisløs og poleret tilstedeværelse online.",
+        "At dele min tid mellem de to økosystemer holder mig skarp. Den disciplin og enkelhed, jeg værdsætter i Elixir, præger den måde, jeg skriver React på — forudsigelig state, tydelig datastrøm og robust kode, der ikke overrasker dig om et halvt år.",
         "Når jeg ikke er på mit daglige arbejde eller i gang med kundeprojekter, finder du mig typisk i gang med at finpudse netop denne side, læse op på webperformance eller eksperimentere med de nyeste Next.js-funktioner."
       ]
     },
@@ -81,15 +81,15 @@
       "points": [
         {
           "title": "Driftsikkerhed",
-          "body": "Produktionserfaring fra mit daglige arbejde betyder, at jeg tager oppetid, test og vedligeholdelse alvorligt — også i mindre projekter."
+          "body": "Produktionserfaring fra mit daglige arbejde betyder, at jeg tager oppetid, test og langsigtet vedligeholdelse alvorligt — også i mindre projekter."
         },
         {
           "title": "Tydelig kommunikation",
-          "body": "Du ved altid, hvor dit projekt står. Ingen fagjargon, ingen radiotavshed — kun ærlige, direkte opdateringer."
+          "body": "Du ved altid nøjagtigt, hvor dit projekt står. Ingen indforstået fagjargon, ingen radiotavshed — kun ærlige, direkte opdateringer."
         },
         {
           "title": "Moderne håndværk",
-          "body": "Hvert projekt bygges med den samme moderne stack, jeg selv bruger til at udforske nye idéer: React, TypeScript og Next.js."
+          "body": "Hvert projekt bygges med den samme moderne og gennemtestede stack, jeg selv bruger til at udforske nye idéer: React, TypeScript og Next.js."
         }
       ]
     },
@@ -104,7 +104,7 @@
     },
     "cta": {
       "title": "Klar til at starte et projekt?",
-      "body": "Lad os tale om, hvad du er i gang med at bygge, og hvordan jeg kan hjælpe det til at blive til virkelighed.",
+      "body": "Lad os tale om, hvad du er i gang med at bygge, og hvordan jeg kan hjælpe med at bringe det til virkelighed.",
       "button": "Kontakt mig"
     }
   },
@@ -114,12 +114,12 @@
         "id": "web-development",
         "icon": "code",
         "title": "Webudvikling (Next.js/React)",
-        "description": "Skræddersyede hjemmesider og webapplikationer bygget med Next.js og React — moderne, hurtige og klar til at vokse med din forretning.",
+        "description": "Skræddersyede hjemmesider og webapplikationer bygget med Next.js og React — moderne, lynhurtige og klar til at vokse med din forretning.",
         "features": [
           "Skræddersyet design og udvikling",
           "Server-side rendering for optimal SEO",
-          "Responsivt design til alle enheder",
-          "Integration med CMS, betaling og API'er"
+          "Responsivt design til alle skærmstørrelser",
+          "Integration med CMS, betalingsløsninger og API'er"
         ],
         "addon": null
       },
@@ -127,30 +127,30 @@
         "id": "maintenance-support",
         "icon": "maintenance",
         "title": "Vedligeholdelse & support",
-        "description": "Løbende teknisk vedligeholdelse, så din hjemmeside altid er opdateret, sikker og fejlfri — uden at du selv skal tænke på det.",
+        "description": "Løbende teknisk vedligeholdelse, så din hjemmeside altid er opdateret, sikker og fejlfri — uden at du selv skal røre en finger.",
         "features": [
           "Løbende opdateringer af afhængigheder",
           "Sikkerhedsovervågning og fejlrettelser",
-          "Backup og fejlsøgning",
+          "Regelmæssig backup og proaktiv fejlsøgning",
           "Prioriteret support ved akutte problemer"
         ],
         "addon": {
-          "label": "Ekstra ydelse",
+          "label": "Valgfrit tilvalg",
           "price": "4.000 kr.",
           "period": "pr. år",
-          "body": "Jeg sørger for, at din hjemmeside altid kører, inklusiv hosting og fornyelse af domæne, så du ikke selv skal tænke på det.",
-          "note": "Vælger du den fra, hjælper jeg dig med at sætte hosting og domæne op i starten — men derefter står du selv for fornyelser, oppetid og opdateringer."
+          "body": "Jeg sørger for, at din hjemmeside altid kører perfekt. Dette inkluderer hostingadministration og fornyelse af domæne, så du slipper for de tekniske detaljer.",
+          "note": "Vælger du dette fra, hjælper jeg dig med at sætte hosting og domæne op i starten — men derefter overgår ansvaret for fornyelser, oppetid og tekniske opdateringer til dig selv."
         }
       },
       {
         "id": "performance-optimization",
         "icon": "performance",
         "title": "Performance-optimering",
-        "description": "Hurtigere hjemmesider betyder bedre brugeroplevelse, højere konvertering og bedre placering i søgemaskiner.",
+        "description": "Hurtigere hjemmesider sikrer en bedre brugeroplevelse, markant højere konvertering og stærkere placeringer i søgemaskinerne.",
         "features": [
           "Core Web Vitals og Lighthouse-analyse",
           "Billede- og asset-optimering",
-          "Kodesplitting og caching-strategi",
+          "Avanceret kodesplitting og caching-strategi",
           "Løbende performance-monitorering"
         ],
         "addon": null
@@ -160,20 +160,20 @@
       "title": "Sådan arbejder vi sammen",
       "steps": [
         {
-          "title": "Opstart",
-          "body": "Vi afdækker dine mål, målgruppe og krav i en indledende samtale."
+          "title": "Opstart & forventningsafstemning",
+          "body": "Vi afdækker dine mål, målgruppe og specifikke krav i en grundig, indledende samtale."
         },
         {
           "title": "Design & udvikling",
-          "body": "Jeg bygger løsningen i iterationer, så du løbende kan følge med og give feedback."
+          "body": "Jeg bygger løsningen i tætte iterationer, så du løbende kan følge med i processen og give feedback."
         },
         {
           "title": "Test & lancering",
-          "body": "Grundig test af performance, sikkerhed og funktionalitet før lancering."
+          "body": "Vi gennemfører en omfattende test af performance, sikkerhed og funktionalitet inden den endelige lancering."
         },
         {
-          "title": "Opfølgning",
-          "body": "Efter lancering er jeg klar med support og videreudvikling efter behov."
+          "title": "Opfølgning & drift",
+          "body": "Efter lanceringen står jeg klar med teknisk support, optimeringer og videreudvikling efter behov."
         }
       ]
     }
@@ -186,7 +186,7 @@
     "hero": {
       "label": "Projekter",
       "title": "Udvalgte projekter",
-      "subtitle": "Et indblik i professionelt og personligt arbejde, der spænder fra sundhedssystemer til realtidsapplikationer og selve denne platform."
+      "subtitle": "Et indblik i professionelt og personligt arbejde, der spænder fra komplekse sundhedssystemer til realtidsapplikationer."
     },
     "labels": {
       "role": "Rolle",
@@ -209,33 +209,33 @@
     },
     "cta": {
       "title": "Har du et lignende projekt i tankerne?",
-      "body": "Lad os tale om, hvad du er i gang med at bygge, og hvordan jeg kan hjælpe det til at blive til virkelighed.",
+      "body": "Lad os tale om, hvad du er i gang med at bygge, og hvordan jeg kan hjælpe med at bringe det til virkelighed.",
       "button": "Kontakt mig"
     }
   },
   "pricing": {
     "meta": {
       "title": "Ydelser & priser – Hjemmesider til håndværkere & lokale virksomheder",
-      "description": "Webudvikling, vedligeholdelse og performance-optimering til små virksomheder, med gennemsigtige priser fra 9.995 kr. og ingen skjulte gebyrer. Baseret i Haslev, Sjælland."
+      "description": "Webudvikling, vedligeholdelse og performance-optimering til mindre erhverv, med gennemsigtige priser fra 9.995 kr. og timebaseret freelance-bistand. Baseret i Haslev."
     },
     "hero": {
       "label": "Ydelser & priser",
       "title": "Det jeg bygger, og hvad det koster",
-      "subtitle": "Fra nye hjemmesider til løbende vedligeholdelse og performance-arbejde — se hvad der er inkluderet, og hvad det koster, uden skjulte gebyrer."
+      "subtitle": "Fra nye hjemmesider til løbende vedligeholdelse og freelancearbejde på timebasis — gennemsigtige priser, helt uden skjulte gebyrer."
     },
     "servicesTitle": "Det jeg tilbyder",
     "tiers": [
       {
         "name": "Basic",
-        "price": "9.995",
+        "price": "9.995 kr.",
         "period": "engangsbeløb",
-        "description": "Perfekt til iværksættere og mindre virksomheder, der har brug for en professionel tilstedeværelse online.",
-        "details": "En ren og professionel hjemmeside med op til 5 sider — perfekt til forside, ydelser, om os og kontakt. Den fungerer godt på både mobil og tablet, vises korrekt i Google-søgninger, og har en kontaktformular, så kunderne nemt kan skrive til dig. Den første måned efter lancering retter jeg gratis, hvis der opstår problemer.",
+        "description": "Perfekt til iværksættere og mindre virksomheder, der har brug for en skarp og professionel profil online.",
+        "details": "En strømlinet, lynhurtig hjemmeside med op til 5 sider — ideel til f.eks. forside, ydelser, om os og kontakt. Løsningen er fuldt responsiv på mobil og tablet, optimeret grundlæggende til Google-søgninger og udstyret med en sikker kontaktformular. Der medfølger 1 måneds dedikeret support efter lancering, så vi er sikre på, at alt spiller.",
         "features": [
           "Op til 5 sider",
           "Responsivt design",
           "Grundlæggende SEO-opsætning",
-          "Kontaktformular",
+          "Sikker kontaktformular",
           "1 måneds support efter lancering"
         ],
         "cta": "Vælg Basic",
@@ -243,14 +243,14 @@
       },
       {
         "name": "Professional",
-        "price": "19.995",
+        "price": "19.995 kr.",
         "period": "engangsbeløb",
-        "description": "Til virksomheder der har brug for skræddersyede funktioner og bedre performance.",
-        "details": "En større, skræddersyet hjemmeside med op til 12 sider, bygget specifikt til din virksomhed frem for en skabelon. Du får et simpelt redigeringsværktøj (et \"CMS\"), så du selv kan opdatere tekst og billeder uden at kunne kode. Jeg finjusterer også siden, så den loader hurtigt og ranker godt i søgemaskiner, og sætter den op på både dansk og engelsk, hvis du betjener kunder i begge sprog. Inkluderer 3 måneders support efter lancering.",
+        "description": "Til virksomheder der ønsker fuldstændig skræddersyet design og udvidet funktionalitet.",
+        "details": "En komplet, unikt designet hjemmeside med op til 12 sider, bygget helt fra bunden uden tunge skabeloner. Siden integreres med et brugervenligt CMS, så du nemt kan redigere tekst og billeder uden teknisk snilde. Indeholder avanceret hastighedsoptimering, dybdegående SEO-arbejde og understøttelse af flersproget opsætning (DA/EN). Inkluderer 3 måneders tæt support efter lancering.",
         "features": [
           "Op til 12 sider",
           "Skræddersyet UI/UX-design",
-          "CMS-integration",
+          "CMS-integration (nem redigering)",
           "Avanceret SEO og performance-optimering",
           "Flersproget opsætning (DA/EN)",
           "3 måneders support efter lancering"
@@ -259,11 +259,27 @@
         "highlighted": true
       },
       {
+        "name": "Timebasis / Ad-hoc",
+        "price": "450 kr.",
+        "period": "pr. time",
+        "description": "Til eksisterende hjemmesider der har brug for løbende opdateringer, fejlrettelser eller nye funktioner.",
+        "details": "Ideelt hvis du allerede har en fungerende løsning, men mangler en erfaren udvikler til at rette tekniske fejl, bygge en ny underside, optimere indlæsningshastigheden eller tilføje specifikke React/Next.js-komponenter. Du betaler udelukkende for den faktiske tid, der bruges, og timerne registreres fuldstændig transparent. En fleksibel løsning uden binding.",
+        "features": [
+          "Fejlretning & tekniske opdateringer",
+          "Performance- & hastighedsoptimering",
+          "Udvikling af specialfunktioner",
+          "Transparent tidsregistrering",
+          "Ingen faste bindingsperioder"
+        ],
+        "cta": "Hyres på timebasis",
+        "highlighted": false
+      },
+      {
         "name": "Enterprise",
         "price": "Kontakt mig",
         "period": "skræddersyet tilbud",
-        "description": "Til komplekse projekter, webapplikationer og virksomheder med specifikke krav.",
-        "details": "Til virksomheder der har brug for mere end en hjemmeside — for eksempel bookingsystemer, kundeportaler eller værktøjer der kobles sammen med andre systemer, I allerede bruger, som økonomi eller lager. Der er ingen grænse for antal sider, og jeg kobler siden sammen med de systemer, jeres virksomhed er afhængig af. Performance og sikkerhed skræddersys specifikt til jeres opsætning, og I får en løbende vedligeholdelsesaftale med prioriteret support, så problemer bliver løst hurtigt.",
+        "description": "Til komplekse platforme, deciderede webapplikationer og forretninger med særlige krav.",
+        "details": "Skræddersyet til virksomheder, der har brug for avancerede systemer — såsom integrerede bookingsystemer, lukkede kundeportaler eller tætte integrationer med eksterne forretningsværktøjer (økonomi-, CRM- eller lagersystemer). Der er ingen begrænsninger på antal sider, arkitekturen bygges med maksimal sikkerhed, og der medfølger en prioriteret vedligeholdelsesaftale.",
         "features": [
           "Ubegrænset antal sider",
           "Skræddersyet webapplikation",
@@ -276,27 +292,27 @@
         "highlighted": false
       }
     ],
-    "note": "Alle priser er ekskl. moms. Hosting og domæne er ikke inkluderet i pakkerne nedenfor — jeg hjælper dig med at sætte det op, eller du kan tilføje Vedligeholdelse & support (se \"Det jeg tilbyder\" nedenfor), så jeg står for det hele løbende.",
+    "note": "Alle priser er ekskl. moms. Hosting og domæneafgifter er ikke inkluderet i projektpakkerne — jeg hjælper dig gladeligt med den indledende opsætning, eller du kan vælge vores Vedligeholdelse & support-aftale, så jeg håndterer driften kontinuerligt.",
     "faq": {
       "title": "Ofte stillede spørgsmål",
       "items": [
         {
           "question": "Hvor lang tid tager et projekt?",
-          "answer": "Et typisk Basic-projekt tager 2-3 uger, mens Professional og Enterprise-projekter typisk tager 4-8 uger afhængigt af omfang."
+          "answer": "Et typisk Basic-projekt tager 2-3 uger, mens Professional og Enterprise-projekter typisk strækker sig over 4-8 uger afhængigt af det specifikke omfang og funktionskrav."
         },
         {
           "question": "Kan jeg selv redigere indholdet bagefter?",
-          "answer": "Ja. Ved Professional og Enterprise-pakker integrerer jeg et CMS, så du selv kan opdatere tekster og billeder uden at kunne kode."
+          "answer": "Ja. Ved Professional- og Enterprise-pakkerne integrerer jeg et Content Management System (CMS), som gør det nemt for dig at opdatere tekster, oprette sider og udskifte billeder helt uden at skulle kode."
         },
         {
           "question": "Tilbyder du betalingsplaner?",
-          "answer": "Ja, projekter faktureres typisk i to rater: 50% ved opstart og 50% ved lancering. Kontakt mig for at aftale nærmere."
+          "answer": "Ja, faste projekter faktureres i to rater af sikkerhedsmæssige årsager: 50% ved projektets opstart og de resterende 50% ved den endelige lancering. Kontakt mig, hvis du ønsker en anden struktur."
         }
       ]
     },
     "cta": {
       "title": "Klar til at komme i gang?",
-      "body": "Fortæl mig om dit projekt, så vender jeg tilbage inden for 24 timer med næste skridt.",
+      "body": "Fortæl mig kort om dit projekt, så vender jeg tilbage inden for 24 timer med forslag til de næste skridt.",
       "button": "Kontakt mig"
     }
   },
@@ -308,7 +324,7 @@
     "hero": {
       "label": "Kontakt",
       "title": "Lad os tale om dit projekt",
-      "subtitle": "Udfyld formularen nedenfor, så vender jeg tilbage inden for 24 timer."
+      "subtitle": "Udfyld formularen nedenfor, så vender jeg tilbage til dig inden for 24 timer."
     },
     "form": {
       "nameLabel": "Navn",
@@ -316,24 +332,24 @@
       "emailLabel": "Email",
       "emailPlaceholder": "dig@virksomhed.dk",
       "serviceLabel": "Ydelse",
-      "serviceOptionGeneral": "Generel henvendelse / ved ikke",
+      "serviceOptionGeneral": "Generel henvendelse / ikke fastlagt",
       "messageLabel": "Besked",
-      "messagePlaceholder": "Fortæl mig om dit projekt...",
+      "messagePlaceholder": "Fortæl mig lidt om dit projekt...",
       "planPrefix": "Hej, jeg er interesseret i",
       "planSuffix": "-pakken. Kan du fortælle mig mere?",
       "planNoticeLabel": "Valgt pakke",
       "submit": "Send besked",
       "sending": "Sender...",
-      "success": "Tak for din henvendelse! Jeg vender tilbage inden for 24 timer.",
-      "error": "Der gik noget galt. Prøv igen, eller skriv til mig direkte."
+      "success": "Mange tak for din henvendelse! Jeg vender tilbage til dig inden for 24 timer.",
+      "error": "Der gik desværre noget galt. Prøv venligst igen, eller skriv direkte til min e-mail."
     }
   },
   "footer": {
-    "tagline": "Freelance webudvikling med fokus på performance, design og resultater.",
+    "tagline": "Freelance webudvikling med fokus på performance, design og målbare resultater.",
     "columnsNav": "Navigation",
     "columnsContact": "Kontakt",
     "email": "luhavenkvist@yahoo.dk",
-    "location": "Haslev, Danmark · Betjener hele Sjælland",
+    "location": "Haslev, Danmark · Dækker hele Sjælland",
     "rights": "Alle rettigheder forbeholdes."
   }
 }

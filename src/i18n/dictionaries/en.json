@@ -136,10 +136,10 @@
         ],
         "addon": {
           "label": "Optional add-on",
-          "price": "4,000 kr.",
+          "price": "4.000 kr.",
           "period": "per year",
-          "body": "I'll make sure your site keeps running, including hosting and domain renewal, so you never have to think about it.",
-          "note": "Skip this, and once I've helped you get hosting and a domain set up initially, you're on your own for renewals, uptime, and updates going forward."
+          "body": "I'll make sure your site keeps running perfectly. This includes hosting management and domain renewal, so you never have to worry about the technical details.",
+          "note": "If you choose to handle it yourself, I will help you set up the domain and hosting initially. After launch, renewals, uptime, and ongoing technical updates will be your responsibility."
         }
       },
       {
@@ -216,21 +216,21 @@
   "pricing": {
     "meta": {
       "title": "Services & Pricing – Websites for Tradespeople & Local Businesses",
-      "description": "Web development, maintenance, and performance optimization for small businesses, with transparent pricing starting at $1,395 and no hidden fees. Based in Haslev, Denmark."
+      "description": "Web development, maintenance, and performance optimization for small businesses, with transparent pricing starting at 9.995 kr. and hourly freelance rates. Based in Haslev, Denmark."
     },
     "hero": {
       "label": "Services & Pricing",
       "title": "What I build, and what it costs",
-      "subtitle": "From new websites to ongoing maintenance and performance work — see what's included and what it costs, with no hidden fees."
+      "subtitle": "From new websites to ongoing maintenance and hourly freelance work — see what's included and what it costs, with no hidden fees."
     },
     "servicesTitle": "What I offer",
     "tiers": [
       {
         "name": "Basic",
-        "price": "1,395",
+        "price": "9.995 kr.",
         "period": "one-time",
         "description": "Perfect for entrepreneurs and small businesses that need a professional online presence.",
-        "details": "A clean, professional website with up to 5 pages — perfect for a homepage, services, about, and contact. It works well on phones and tablets, shows up properly in Google searches, and includes a working contact form so customers can reach you. For the first month after launch, I'll fix anything that comes up at no extra cost.",
+        "details": "A clean, high-performance website with up to 5 pages — ideal for a homepage, services overview, about section, and contact details. It is fully responsive across phones and tablets, optimized for Google searches, and includes a secure contact form. Includes 1 month of dedicated support after launch to ensure everything runs smoothly.",
         "features": [
           "Up to 5 pages",
           "Responsive design",
@@ -243,10 +243,10 @@
       },
       {
         "name": "Professional",
-        "price": "2,795",
+        "price": "19.995 kr.",
         "period": "one-time",
         "description": "For businesses that need custom functionality and better performance.",
-        "details": "A larger, fully custom-designed website with up to 12 pages, built specifically around your business rather than a template. You'll get a simple admin panel (a \"CMS\") so you can update text and photos yourself without knowing how to code. I'll also fine-tune the site so it loads fast and ranks well in search engines, and set it up in both Danish and English if you serve customers in both languages. Includes 3 months of support after launch.",
+        "details": "A comprehensive, fully custom-designed website with up to 12 pages, built from scratch tailored entirely to your brand. Includes user-friendly CMS integration, allowing you to update text and photos easily without touching a single line of code. Features advanced speed optimization and thorough SEO. Supports a multilingual setup (Danish/English) to target local and international customers. Includes 3 months of dedicated support after launch.",
         "features": [
           "Up to 12 pages",
           "Custom UI/UX design",
@@ -259,11 +259,27 @@
         "highlighted": true
       },
       {
+        "name": "Hourly / Ad-hoc",
+        "price": "450 kr.",
+        "period": "per hour",
+        "description": "For existing websites that need ongoing updates, debugging, or custom features.",
+        "details": "Perfect if you already have a working website but need an experienced developer to fix bugs, build a new subpage, optimize performance, or add custom React/Next.js components. You only pay for the exact time spent, and I track all hours transparently. This option is highly flexible and ideal for smaller, ongoing adjustments or consulting without committing to a full package.",
+        "features": [
+          "Bug fixing & technical updates",
+          "Performance & speed optimization",
+          "Custom feature development",
+          "Transparent time-tracking",
+          "No long-term commitment"
+        ],
+        "cta": "Hire by the hour",
+        "highlighted": false
+      },
+      {
         "name": "Enterprise",
         "price": "Contact me",
         "period": "custom quote",
         "description": "For complex projects, web applications, and businesses with specific requirements.",
-        "details": "For businesses that need more than a website — think booking systems, customer portals, or tools connected to other software you already use, like accounting or inventory. There's no limit on pages, and I'll connect the site to whatever other systems your business relies on. Performance and security are tailored specifically to your setup, and you get an ongoing maintenance agreement with priority support, so problems get solved fast.",
+        "details": "Tailored for businesses needing advanced systems — such as custom booking engines, client portals, or deep integrations with your current business tools (accounting, CRM, or inventory software). There are no page limits, and every backend connection is built securely. Features premium speed setups and a dedicated ongoing maintenance agreement with priority support to ensure lightning-fast resolutions.",
         "features": [
           "Unlimited pages",
           "Custom web application",
@@ -272,25 +288,25 @@
           "Ongoing maintenance agreement",
           "Priority support"
         ],
-        "cta": "Get in touch",
+        "cta": "Contact me",
         "highlighted": false
       }
     ],
-    "note": "All prices are excluding VAT. Hosting and domain are not included in the packages below — I'll help you set them up, or you can add the Maintenance & Support plan (see \"What I offer\" below) to have me handle it all for you, ongoing.",
+    "note": "All prices exclude VAT (moms). Hosting and domain are not included in the one-time project packages — I will gladly help you get everything set up initially, or you can opt for the Maintenance & Support plan to have me manage it continuously.",
     "faq": {
       "title": "Frequently asked questions",
       "items": [
         {
           "question": "How long does a project take?",
-          "answer": "A typical Basic project takes 2-3 weeks, while Professional and Enterprise projects usually take 4-8 weeks depending on scope."
+          "answer": "A typical Basic project takes 2-3 weeks, while Professional and Enterprise projects usually take 4-8 weeks depending on the overall scope and specific functionality needed."
         },
         {
           "question": "Can I edit the content myself afterward?",
-          "answer": "Yes. For Professional and Enterprise packages, I integrate a CMS so you can update text and images yourself without coding."
+          "answer": "Yes. For Professional and Enterprise packages, I integrate a Content Management System (CMS) so you can update copy, manage pages, and change images independently without writing code."
         },
         {
           "question": "Do you offer payment plans?",
-          "answer": "Yes, projects are typically invoiced in two installments: 50% at kickoff and 50% at launch. Get in touch to arrange details."
+          "answer": "Yes, projects are securely invoiced in two equal installments: 50% upfront at project kickoff and the remaining 50% upon final launch. Get in touch to arrange the practical details."
         }
       ]
     },
