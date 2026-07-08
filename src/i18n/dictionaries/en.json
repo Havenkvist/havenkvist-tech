@@ -223,6 +223,17 @@
       "title": "What I build, and what it costs",
       "subtitle": "From new websites to ongoing maintenance and hourly freelance work — see what's included and what it costs, with no hidden fees."
     },
+    "launchOffer": {
+      "deliveredOne": "1 website delivered so far",
+      "deliveredOther": "{count} websites delivered so far",
+      "nextUp": "You'd be customer #{n}",
+      "spotsOne": "1 discounted spot left",
+      "spotsOther": "{count} discounted spots left",
+      "founding": "Founding customer #{n}",
+      "discountOff": "{percent}% off",
+      "discountOffCustomQuote": "{percent}% off your custom quote",
+      "payOnDelivery": "Pay on delivery — nothing upfront"
+    },
     "servicesTitle": "What I offer",
     "tiers": [
       {
@@ -239,7 +250,8 @@
           "1 month of support after launch"
         ],
         "cta": "Choose Basic",
-        "highlighted": false
+        "highlighted": false,
+        "launchOfferEligible": true
       },
       {
         "name": "Professional",
@@ -256,7 +268,8 @@
           "3 months of support after launch"
         ],
         "cta": "Choose Professional",
-        "highlighted": true
+        "highlighted": true,
+        "launchOfferEligible": true
       },
       {
         "name": "Hourly / Ad-hoc",
@@ -272,7 +285,8 @@
           "No long-term commitment"
         ],
         "cta": "Hire by the hour",
-        "highlighted": false
+        "highlighted": false,
+        "launchOfferEligible": false
       },
       {
         "name": "Enterprise",
@@ -289,7 +303,8 @@
           "Priority support"
         ],
         "cta": "Contact me",
-        "highlighted": false
+        "highlighted": false,
+        "launchOfferEligible": false
       }
     ],
     "note": "All prices exclude VAT (moms). Hosting and domain are not included in the one-time project packages — I will gladly help you get everything set up initially, or you can opt for the Maintenance & Support plan to have me manage it continuously.",

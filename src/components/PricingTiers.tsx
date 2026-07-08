@@ -3,6 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { pathForRoute, type Locale } from "@/i18n/config";
+import { launchOffer } from "@/data/launchOffer";
+import { formatText } from "@/lib/format";
+import type { Dictionary } from "@/i18n/dictionaries";
+
+type LaunchOfferText = Dictionary["pricing"]["launchOffer"];
 
 type Tier = {
   name: string;
@@ -13,6 +18,7 @@ type Tier = {
   features: string[];
   cta: string;
   highlighted: boolean;
+  launchOfferEligible: boolean;
 };
 
 const FEATURE_PREVIEW_LIMIT = 6;
@@ -33,14 +39,79 @@ function CheckIcon() {
   );
 }
 
+function parsePriceAmount(price: string): { amount: number; suffix: string } | null {
+  const match = price.match(/^([\d.,]+)\s*(.*)$/);
+  if (!match) return null;
+  const amount = Number(match[1].replace(/[.,]/g, ""));
+  if (!Number.isFinite(amount)) return null;
+  return { amount, suffix: match[2] };
+}
+
+function formatDiscountedPrice(price: string, discountPercent: number): string | null {
+  const parsed = parsePriceAmount(price);
+  if (!parsed) return null;
+  const discounted = Math.round((parsed.amount * (1 - discountPercent / 100)) / 5) * 5;
+  return `${new Intl.NumberFormat("da-DK").format(discounted)} ${parsed.suffix}`.trim();
+}
+
+function TierPrice({ tier }: { tier: Tier }) {
+  const priceInfo = parsePriceAmount(tier.price);
+  const isCustomQuote = priceInfo === null;
+  const offerApplies = tier.launchOfferEligible && launchOffer.active;
+
+  if (offerApplies && !isCustomQuote) {
+    const discounted = formatDiscountedPrice(tier.price, launchOffer.discountPercent);
+    return (
+      <div className="mt-6 flex flex-wrap items-baseline gap-x-2 gap-y-1">
+        <span className="text-lg font-medium text-black/35 line-through dark:text-white/35">
+          {tier.price}
+        </span>
+        <span className="text-4xl font-semibold tracking-tight text-black dark:text-white">
+          {discounted}
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-6 flex items-baseline gap-1">
+      <span className="text-4xl font-semibold tracking-tight text-black dark:text-white">
+        {tier.price}
+      </span>
+    </div>
+  );
+}
+
+function TierOfferBadge({ tier, t }: { tier: Tier; t: LaunchOfferText }) {
+  if (!(tier.launchOfferEligible && launchOffer.active)) return null;
+  const isCustomQuote = parsePriceAmount(tier.price) === null;
+
+  const foundingLabel = formatText(t.founding, { n: launchOffer.customerNumber });
+  const discountLabel = formatText(
+    isCustomQuote ? t.discountOffCustomQuote : t.discountOff,
+    { percent: launchOffer.discountPercent }
+  );
+
+  return (
+    <div className="mt-4 flex flex-col gap-1 rounded-lg border border-green-600/30 bg-green-600/5 px-3 py-2 dark:border-green-400/30 dark:bg-green-400/10">
+      <span className="text-xs font-semibold uppercase tracking-wide text-green-700 dark:text-green-400">
+        {foundingLabel} · {discountLabel}
+      </span>
+      <span className="text-sm font-medium text-green-800 dark:text-green-300">
+        {t.payOnDelivery}
+      </span>
+    </div>
+  );
+}
+
 export function PricingTiers({
   tiers,
   lang,
-  currency,
+  launchOfferText,
 }: {
   tiers: Tier[];
   lang: Locale;
-  currency: string;
+  launchOfferText: LaunchOfferText;
 }) {
   const [expandedName, setExpandedName] = useState<string | null>(null);
   const expandedCardRef = useRef<HTMLDivElement | null>(null);
@@ -51,9 +122,6 @@ export function PricingTiers({
     }
   }, [expandedName]);
 
-  const isCustomTier = (tier: Tier) => tiers.indexOf(tier) === tiers.length - 1;
-  const formatPrice = (tier: Tier) =>
-    isCustomTier(tier) ? tier.price : currency === "$" ? `$${tier.price}` : `${tier.price} kr.`;
   const ctaHref = (tierName: string) =>
     `${pathForRoute(lang, "contact")}?plan=${encodeURIComponent(tierName)}`;
 
@@ -102,14 +170,11 @@ export function PricingTiers({
                 {expandedTier.description}
               </p>
 
-              <div className="mt-6 flex items-baseline gap-1">
-                <span className="text-4xl font-semibold tracking-tight text-black dark:text-white">
-                  {formatPrice(expandedTier)}
-                </span>
-              </div>
+              <TierPrice tier={expandedTier} />
               <p className="mt-1 text-xs uppercase tracking-wide text-black/40 dark:text-white/40">
                 {expandedTier.period}
               </p>
+              <TierOfferBadge tier={expandedTier} t={launchOfferText} />
 
               <ul className="mt-6 flex flex-1 flex-col gap-3">
                 {expandedTier.features.map((feature) => (
@@ -170,14 +235,11 @@ export function PricingTiers({
               <h3 className="text-xl font-semibold text-black dark:text-white">{tier.name}</h3>
               <p className="mt-2 text-sm text-black/60 dark:text-white/60">{tier.description}</p>
 
-              <div className="mt-6 flex items-baseline gap-1">
-                <span className="text-4xl font-semibold tracking-tight text-black dark:text-white">
-                  {formatPrice(tier)}
-                </span>
-              </div>
+              <TierPrice tier={tier} />
               <p className="mt-1 text-xs uppercase tracking-wide text-black/40 dark:text-white/40">
                 {tier.period}
               </p>
+              <TierOfferBadge tier={tier} t={launchOfferText} />
 
               <ul className="mt-6 flex flex-1 flex-col gap-3">
                 {previewFeatures.map((feature) => (

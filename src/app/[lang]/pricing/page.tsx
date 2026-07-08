@@ -5,6 +5,7 @@ import { hasLocale, getDictionary } from "@/i18n/dictionaries";
 import { pathForRoute, urlForRoute } from "@/i18n/config";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { PricingTiers } from "@/components/PricingTiers";
+import { LaunchOfferStat } from "@/components/LaunchOfferStat";
 
 export async function generateMetadata({
   params,
@@ -41,9 +42,8 @@ export default async function PricingPage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang);
-  const { hero, servicesTitle, tiers, note, faq, cta } = dict.pricing;
+  const { hero, launchOffer, servicesTitle, tiers, note, faq, cta } = dict.pricing;
   const { list, process } = dict.services;
-  const currency = lang === "da" ? "kr." : "$";
 
   return (
     <>
@@ -58,12 +58,13 @@ export default async function PricingPage({
           <p className="mx-auto mt-4 max-w-2xl text-lg text-black/60 dark:text-white/60">
             {hero.subtitle}
           </p>
+          <LaunchOfferStat t={launchOffer} />
         </div>
       </section>
 
       <section id="pricing" className="py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <PricingTiers tiers={tiers} lang={lang} currency={currency} />
+          <PricingTiers tiers={tiers} lang={lang} launchOfferText={launchOffer} />
 
           <p className="mt-10 text-center text-sm text-black/50 dark:text-white/50">
             {note}

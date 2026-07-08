@@ -223,6 +223,17 @@
       "title": "Det jeg bygger, og hvad det koster",
       "subtitle": "Fra nye hjemmesider til løbende vedligeholdelse og freelancearbejde på timebasis — gennemsigtige priser, helt uden skjulte gebyrer."
     },
+    "launchOffer": {
+      "deliveredOne": "1 hjemmeside leveret indtil videre",
+      "deliveredOther": "{count} hjemmesider leveret indtil videre",
+      "nextUp": "Du ville være kunde #{n}",
+      "spotsOne": "1 rabatplads tilbage",
+      "spotsOther": "{count} rabatpladser tilbage",
+      "founding": "Grundlægger-kunde #{n}",
+      "discountOff": "{percent}% rabat",
+      "discountOffCustomQuote": "{percent}% rabat på dit skræddersyede tilbud",
+      "payOnDelivery": "Betal først ved levering — intet betales på forhånd"
+    },
     "servicesTitle": "Det jeg tilbyder",
     "tiers": [
       {
@@ -239,7 +250,8 @@
           "1 måneds support efter lancering"
         ],
         "cta": "Vælg Basic",
-        "highlighted": false
+        "highlighted": false,
+        "launchOfferEligible": true
       },
       {
         "name": "Professional",
@@ -256,7 +268,8 @@
           "3 måneders support efter lancering"
         ],
         "cta": "Vælg Professional",
-        "highlighted": true
+        "highlighted": true,
+        "launchOfferEligible": true
       },
       {
         "name": "Timebasis / Ad-hoc",
@@ -272,7 +285,8 @@
           "Ingen faste bindingsperioder"
         ],
         "cta": "Hyres på timebasis",
-        "highlighted": false
+        "highlighted": false,
+        "launchOfferEligible": false
       },
       {
         "name": "Enterprise",
@@ -289,7 +303,8 @@
           "Prioriteret support"
         ],
         "cta": "Kontakt mig",
-        "highlighted": false
+        "highlighted": false,
+        "launchOfferEligible": false
       }
     ],
     "note": "Alle priser er ekskl. moms. Hosting og domæneafgifter er ikke inkluderet i projektpakkerne — jeg hjælper dig gladeligt med den indledende opsætning, eller du kan vælge vores Vedligeholdelse & support-aftale, så jeg håndterer driften kontinuerligt.",
