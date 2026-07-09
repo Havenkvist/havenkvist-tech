@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Havenkvist Tech – Freelance Web Developer in Haslev, Denmark",
-    "description": "Freelance web developer based in Haslev, Denmark, building fast, professional websites for tradespeople, craftsmen, and small businesses across Zealand."
+    "title": "Havenkvist Tech – Freelance Web Developer Based in Haslev, Denmark",
+    "description": "Freelance web developer based in Haslev, Denmark, building fast, professional websites, and custom projects across Zealand."
   },
   "nav": {
     "home": "Home",
@@ -21,8 +21,6 @@
       "ctaPrimary": "Start your project",
       "ctaSecondary": "See our work",
       "stats": [
-        { "value": "<100ms", "label": "Average response time" },
-        { "value": "100/100", "label": "Lighthouse performance" },
         { "value": "24h", "label": "Response time on inquiries" }
       ]
     },

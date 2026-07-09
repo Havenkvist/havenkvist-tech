@@ -29,20 +29,4 @@ export const education: EducationEntry[] = [
       },
     },
   },
-  {
-    id: "sdu-it-electronics",
-    completed: false,
-    content: {
-      en: {
-        program: "IT & Electronics Engineering",
-        institution: "University of Southern Denmark (SDU)",
-        note: "2 years completed",
-      },
-      da: {
-        program: "IT- og Elektronikingeniør",
-        institution: "Syddansk Universitet (SDU)",
-        note: "2 års studie gennemført",
-      },
-    },
-  },
 ];

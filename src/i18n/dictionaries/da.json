@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Havenkvist Tech – Freelance webudvikler i Haslev",
-    "description": "Freelance webudvikler baseret i Haslev. Jeg bygger hurtige, professionelle hjemmesider til håndværkere, mindre erhverv og små virksomheder på hele Sjælland."
+    "title": "Havenkvist Tech – Freelance webudvikler baseret i Haslev",
+    "description": "Freelance webudvikler baseret i Haslev. Jeg bygger hurtige, professionelle hjemmesider, samt skræddersyede projekter på hele Sjælland."
   },
   "nav": {
     "home": "Forside",
     "about": "Om mig",
-    "portfolio": "Projekter",
+    "portfolio": "Portfolio",
     "pricing": "Ydelser & priser",
     "contact": "Kontakt",
     "cta": "Få et tilbud",
@@ -14,30 +14,24 @@
   },
   "home": {
     "hero": {
-      "badge": "Next.js & React specialister",
-      "title": "Vi bygger websites der",
+      "badge": "Software specialister",
+      "title": "Vi bygger software der",
       "titleHighlight": "vokser med din forretning",
-      "subtitle": "Havenkvist Tech er et freelance udviklingsstudie, der designer og bygger hurtige, skalerbare hjemmesider og webapplikationer med moderne teknologi — skræddersyet til din virksomhed.",
+      "subtitle": "Havenkvist Tech er et freelance software konsulenthus, der designer og bygger software med moderne teknologi, med fokus på skalerbarhed og brugervenlighed — skræddersyet til din virksomhed.",
       "ctaPrimary": "Start dit projekt",
       "ctaSecondary": "Se vores arbejde",
       "stats": [
-        { "value": "<100ms", "label": "Gennemsnitlig svartid" },
-        { "value": "100/100", "label": "Lighthouse performance" },
         { "value": "24t", "label": "Svar på henvendelser" }
       ]
     },
     "intro": {
       "label": "Hvorfor Havenkvist Tech",
       "title": "Teknisk håndværk møder forretningsforståelse",
-      "body": "Jeg kombinerer moderne webteknologi med en klar forståelse for, hvad der faktisk driver din forretning fremad. Ingen unødvendig kompleksitet — kun løsninger der virker, indlæser lynhurtigt og er nemme at vedligeholde.",
+      "body": "Jeg kombinerer moderne webteknologi med en klar forståelse for, hvad der faktisk driver din forretning fremad. Ingen unødvendig kompleksitet — kun løsninger der virker.",
       "points": [
         {
-          "title": "Skræddersyet kode",
-          "body": "Ingen tunge page-builders. Hver komponent er skrevet fra bunden med React og Next.js, så din side forbliver hurtig og fleksibel."
-        },
-        {
-          "title": "Bygget til at vare",
-          "body": "Ren, typesikker kode med TypeScript betyder færre fejl og en løsning, der er nem at bygge videre på i fremtiden."
+          "title": "Skræddersyet kode bygget til at vare",
+          "body": "Med fokus på kode kvalitet og skalérbarhed bygger jeg løsninger, der passer til din bedst forretning."
         },
         {
           "title": "Direkte samarbejde",
@@ -47,19 +41,19 @@
     },
     "cta": {
       "title": "Klar til at løfte din digitale tilstedeværelse?",
-      "body": "Lad os tale om dit projekt. Book en uforpligtende samtale, så finder vi ud af, hvordan jeg bedst kan hjælpe.",
+      "body": "Lad os tale om dit projekt. Book en uforpligtende samtale, så finder vi ud af, hvordan jeg bedst kan hjælpe dig.",
       "button": "Kontakt mig"
     }
   },
   "about": {
     "meta": {
-      "title": "Om mig – Freelance webudvikler i Haslev",
-      "description": "Mød Lucas, fullstack-udvikler og ansigtet bag Havenkvist Tech. Baseret i Haslev og bygger moderne, hurtige hjemmesider til virksomheder på hele Sjælland."
+      "title": "Om mig – Freelance webudvikler baseret i Haslev",
+      "description": "Mød Lucas, fullstack-udvikler og ansigtet bag Havenkvist Tech. Baseret i Haslev og bygger moderne, hurtige hjemmesider til virksomheder i hele danmark."
     },
     "hero": {
       "label": "Om mig",
       "title": "Kode om dagen, kode om natten",
-      "subtitle": "Udvikleren bag Havenkvist Tech — og hvorfor dette studie eksisterer."
+      "subtitle": "personen bag Havenkvist Tech — og hvorfor dette freelance software konsulent eksisterer."
     },
     "story": {
       "label": "Min baggrund",
