@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Havenkvist Tech – Freelance Web Developer Based in Haslev, Denmark",
-    "description": "Freelance web developer based in Haslev, Denmark, building fast, professional websites, and custom projects across Zealand."
+    "title": "Havenkvist Tech – Freelance Software Consultant in Denmark",
+    "description": "Freelance software consultant based in Haslev, Denmark. I help businesses across Denmark with bug fixes, feature development, integrations, and custom software — from quick ad-hoc work to full projects."
   },
   "nav": {
     "home": "Home",
@@ -14,10 +14,10 @@
   },
   "home": {
     "hero": {
-      "badge": "Next.js & React specialists",
-      "title": "We build websites that",
-      "titleHighlight": "grow with your business",
-      "subtitle": "Havenkvist Tech is a freelance development studio designing and building fast, scalable websites and web applications with modern technology — tailored to your business.",
+      "badge": "Freelance software consultant",
+      "title": "We build software that",
+      "titleHighlight": "grows with your business",
+      "subtitle": "Havenkvist Tech is a freelance software consultancy designing, building, and extending software with modern technology — from bug fixes and new features to complete, custom-built solutions, with a focus on scalability and usability.",
       "ctaPrimary": "Start your project",
       "ctaSecondary": "See our work",
       "stats": [
@@ -27,46 +27,46 @@
     "intro": {
       "label": "Why Havenkvist Tech",
       "title": "Technical craft meets business understanding",
-      "body": "I combine modern web technology with a clear understanding of what actually drives your business forward. No unnecessary complexity — just solutions that work, load fast, and are easy to maintain.",
+      "body": "I combine modern software engineering with a clear understanding of what actually drives your business forward — whether the job is fixing a bug, shipping a new feature, or building something new from scratch.",
       "points": [
         {
-          "title": "Custom-built code",
-          "body": "No heavy page builders. Every component is written from scratch with React and Next.js, keeping your site fast and flexible."
+          "title": "Fixes what you already have",
+          "body": "Bug fixes, updates, and new features for existing sites and systems — you don't need to start from scratch to get help."
         },
         {
-          "title": "Built to last",
-          "body": "Clean, type-safe code with TypeScript means fewer bugs and a solution that's easy to build on in the future."
+          "title": "Builds what's missing",
+          "body": "Custom software from the ground up — web applications, internal tools, integrations, and extensions, tailored to exactly what you need."
         },
         {
           "title": "Direct collaboration",
-          "body": "You talk directly to the developer building your solution — no middlemen, no miscommunication."
+          "body": "You talk directly to the developer solving the problem — no middlemen, no miscommunication."
         }
       ]
     },
     "cta": {
-      "title": "Ready to elevate your digital presence?",
+      "title": "Ready to get your next software task solved?",
       "body": "Let's talk about your project. Book a no-obligation call and we'll figure out how I can best help.",
       "button": "Get in touch"
     }
   },
   "about": {
     "meta": {
-      "title": "About – Freelance Web Developer in Haslev",
-      "description": "Meet Lucas, fullstack developer and the person behind Havenkvist Tech. Based in Haslev, Denmark, building modern, fast websites for businesses across Zealand."
+      "title": "About – Freelance Software Consultant in Haslev",
+      "description": "Meet Lucas, fullstack developer and the person behind Havenkvist Tech. Based in Haslev, Denmark, solving software problems — from bug fixes to custom-built systems — for businesses across Denmark."
     },
     "hero": {
       "label": "About",
       "title": "Code by day, code by night",
-      "subtitle": "The developer behind Havenkvist Tech — and why this studio exists."
+      "subtitle": "The person behind Havenkvist Tech — and why this freelance software consultancy exists."
     },
     "story": {
       "label": "My background",
       "title": "A fullstack developer with a nighttime obsession for the frontend",
       "paragraphs": [
         "I'm Lucas, a fullstack developer based in Haslev, Denmark. By day, I build and maintain production applications with Elixir and Phoenix LiveView — systems that need to stay fast, reliable, and easy to reason about at scale.",
-        "Havenkvist Tech is my evening and weekend project — a small freelance studio where I explore the other side of the stack. Here, I mainly work with React, TypeScript, and Next.js, building modern websites and web applications for clients who want a fast, polished online presence.",
+        "Havenkvist Tech is my evening and weekend project — a freelance software consultancy where I take on everything from small bug fixes and ongoing development of existing systems to entirely new, custom-built solutions. Whether you need a quick fix for a specific problem or want to build something from the ground up, you can hire me for the job.",
         "Splitting my time between two ecosystems keeps me sharp. The discipline and simplicity I value in Elixir shapes how I write React — predictable state, clear data flow, and code that won't surprise you six months from now.",
-        "When I'm not at my day job or working on client projects, you'll usually find me refining this very site, reading up on web performance, or experimenting with the newest Next.js features."
+        "When I'm not at my day job or working on client projects, you'll usually find me refining this very site, reading up on software architecture, or experimenting with new technologies."
       ]
     },
     "education": {
@@ -79,21 +79,21 @@
       "points": [
         {
           "title": "Reliability",
-          "body": "Production experience from my day job means I take uptime, testing, and maintainability seriously — even for small projects."
+          "body": "Production experience from my day job means I take uptime, testing, and maintainability seriously — even for small tasks."
         },
         {
           "title": "Clear communication",
-          "body": "You'll always know where your project stands. No jargon, no radio silence — just honest, direct updates."
+          "body": "You'll always know exactly where your task stands. No jargon, no radio silence — just honest, direct updates."
         },
         {
           "title": "Modern craft",
-          "body": "Every project is built with the same modern stack I use to explore new ideas: React, TypeScript, and Next.js."
+          "body": "Every task is handled with a modern, battle-tested stack, whether it's a bug fix, a new feature, or an entirely new system."
         }
       ]
     },
     "contact": {
       "title": "Let's get in touch",
-      "body": "Have a project in mind, or just want to say hi? Reach out directly — I read and answer every message myself.",
+      "body": "Have a task in mind, or just want to say hi? Reach out directly — I read and answer every message myself.",
       "addressLabel": "Address",
       "addressLines": ["Frøgårdsvej 7, 2. th.", "4690 Haslev, Denmark"],
       "emailLabel": "Email",
@@ -102,22 +102,35 @@
     },
     "cta": {
       "title": "Ready to start a project?",
-      "body": "Let's talk about what you're building and how I can help bring it to life.",
+      "body": "Let's talk about what you're building or maintaining, and how I can help.",
       "button": "Get in touch"
     }
   },
   "services": {
     "list": [
       {
-        "id": "web-development",
+        "id": "custom-software",
         "icon": "code",
-        "title": "Web Development (Next.js/React)",
-        "description": "Custom websites and web applications built with Next.js and React — modern, fast, and ready to grow with your business.",
+        "title": "Custom Software Development",
+        "description": "Software built from the ground up around your exact needs — web applications, internal tools, integrations, and browser extensions.",
         "features": [
-          "Custom design and development",
-          "Server-side rendering for optimal SEO",
-          "Responsive design across all devices",
-          "Integration with CMS, payments, and APIs"
+          "Custom architecture and design",
+          "Web applications and internal tools",
+          "Browser extensions and integrations",
+          "API integrations and automation"
+        ],
+        "addon": null
+      },
+      {
+        "id": "freelance-adhoc",
+        "icon": "hourly",
+        "title": "Freelance & Ad-hoc Development",
+        "description": "Already have a system, website, or app? I step in and solve concrete tasks — no long contracts or commitments required.",
+        "features": [
+          "Bug fixing and debugging",
+          "New feature implementation",
+          "Updates to existing code",
+          "Transparent time-tracking"
         ],
         "addon": null
       },
@@ -125,7 +138,7 @@
         "id": "maintenance-support",
         "icon": "maintenance",
         "title": "Maintenance & Support",
-        "description": "Ongoing technical maintenance so your website stays up to date, secure, and bug-free — without you having to think about it.",
+        "description": "Ongoing technical maintenance so your software stays up to date, secure, and bug-free — without you having to think about it.",
         "features": [
           "Continuous dependency updates",
           "Security monitoring and bug fixes",
@@ -136,22 +149,9 @@
           "label": "Optional add-on",
           "price": "4.000 kr.",
           "period": "per year",
-          "body": "I'll make sure your site keeps running perfectly. This includes hosting management and domain renewal, so you never have to worry about the technical details.",
+          "body": "I'll make sure your software keeps running perfectly. This includes hosting management and domain renewal, so you never have to worry about the technical details.",
           "note": "If you choose to handle it yourself, I will help you set up the domain and hosting initially. After launch, renewals, uptime, and ongoing technical updates will be your responsibility."
         }
-      },
-      {
-        "id": "performance-optimization",
-        "icon": "performance",
-        "title": "Performance Optimization",
-        "description": "Faster websites mean better user experience, higher conversion, and better search engine rankings.",
-        "features": [
-          "Core Web Vitals and Lighthouse analysis",
-          "Image and asset optimization",
-          "Code splitting and caching strategy",
-          "Ongoing performance monitoring"
-        ],
-        "addon": null
       }
     ],
     "process": {
@@ -206,24 +206,24 @@
       "direct": "Client review"
     },
     "cta": {
-      "title": "Have a similar project in mind?",
-      "body": "Let's talk about what you're building and how I can help bring it to life.",
+      "title": "Have a similar task in mind?",
+      "body": "Let's talk about what you're building or maintaining, and how I can help.",
       "button": "Get in touch"
     }
   },
   "pricing": {
     "meta": {
-      "title": "Services & Pricing – Websites for Tradespeople & Local Businesses",
-      "description": "Web development, maintenance, and performance optimization for small businesses, with transparent pricing starting at 9.995 kr. and hourly freelance rates. Based in Haslev, Denmark."
+      "title": "Services & Pricing – Freelance Software Consultant in Denmark",
+      "description": "Freelance software development at a flat 450 kr./hour, plus custom software projects by quote. Bug fixes, new features, integrations, and complete systems — based in Haslev, serving businesses across Denmark."
     },
     "hero": {
       "label": "Services & Pricing",
-      "title": "What I build, and what it costs",
-      "subtitle": "From new websites to ongoing maintenance and hourly freelance work — see what's included and what it costs, with no hidden fees."
+      "title": "Flexible help, transparent pricing",
+      "subtitle": "From quick fixes billed by the hour to complete, custom software projects — no hidden fees, just honest pricing."
     },
     "launchOffer": {
-      "deliveredOne": "1 website delivered so far",
-      "deliveredOther": "{count} websites delivered so far",
+      "deliveredOne": "1 project delivered so far",
+      "deliveredOther": "{count} projects delivered so far",
       "nextUp": "You'd be customer #{n}",
       "spotsOne": "1 discounted spot left",
       "spotsOther": "{count} discounted spots left",
@@ -235,108 +235,78 @@
     "servicesTitle": "What I offer",
     "tiers": [
       {
-        "name": "Basic",
-        "price": "9.995 kr.",
-        "period": "one-time",
-        "description": "Perfect for entrepreneurs and small businesses that need a professional online presence.",
-        "details": "A clean, high-performance website with up to 5 pages — ideal for a homepage, services overview, about section, and contact details. It is fully responsive across phones and tablets, optimized for Google searches, and includes a secure contact form. Includes 1 month of dedicated support after launch to ensure everything runs smoothly.",
-        "features": [
-          "Up to 5 pages",
-          "Responsive design",
-          "Basic SEO setup",
-          "Contact form",
-          "1 month of support after launch"
-        ],
-        "cta": "Choose Basic",
-        "highlighted": false,
-        "launchOfferEligible": true
-      },
-      {
-        "name": "Professional",
-        "price": "19.995 kr.",
-        "period": "one-time",
-        "description": "For businesses that need custom functionality and better performance.",
-        "details": "A comprehensive, fully custom-designed website with up to 12 pages, built from scratch tailored entirely to your brand. Includes user-friendly CMS integration, allowing you to update text and photos easily without touching a single line of code. Features advanced speed optimization and thorough SEO. Supports a multilingual setup (Danish/English) to target local and international customers. Includes 3 months of dedicated support after launch.",
-        "features": [
-          "Up to 12 pages",
-          "Custom UI/UX design",
-          "CMS integration",
-          "Advanced SEO and performance optimization",
-          "Multilingual setup (DA/EN)",
-          "3 months of support after launch"
-        ],
-        "cta": "Choose Professional",
-        "highlighted": true,
-        "launchOfferEligible": true
-      },
-      {
         "name": "Hourly / Ad-hoc",
         "price": "450 kr.",
         "period": "per hour",
-        "description": "For existing websites that need ongoing updates, debugging, or custom features.",
-        "details": "Perfect if you already have a working website but need an experienced developer to fix bugs, build a new subpage, optimize performance, or add custom React/Next.js components. You only pay for the exact time spent, and I track all hours transparently. This option is highly flexible and ideal for smaller, ongoing adjustments or consulting without committing to a full package.",
+        "description": "For when you have a specific need — a bug to fix, a feature to add, an update, or a hand with an existing system. No commitment, no fixed packages.",
+        "details": "Perfect if you already have a website, web app, or system, but need an experienced developer to fix bugs, implement a new feature, build an integration or extension, or optimize what's already running. You only pay for the exact time spent, tracked fully transparently. This is the core of what I offer as a freelancer — hire me for exactly the task you need solved.",
         "features": [
           "Bug fixing & technical updates",
-          "Performance & speed optimization",
-          "Custom feature development",
+          "New feature implementation",
+          "Extensions, integrations & automation",
+          "Ongoing development on existing code",
           "Transparent time-tracking",
           "No long-term commitment"
         ],
-        "cta": "Hire by the hour",
-        "highlighted": false,
+        "cta": "Hire me by the hour",
+        "highlighted": true,
         "launchOfferEligible": false
       },
       {
-        "name": "Enterprise",
+        "name": "Custom Software",
         "price": "Contact me",
         "period": "custom quote",
-        "description": "For complex projects, web applications, and businesses with specific requirements.",
-        "details": "Tailored for businesses needing advanced systems — such as custom booking engines, client portals, or deep integrations with your current business tools (accounting, CRM, or inventory software). There are no page limits, and every backend connection is built securely. Features premium speed setups and a dedicated ongoing maintenance agreement with priority support to ensure lightning-fast resolutions.",
+        "description": "For businesses that need something bigger — a new web application, an internal tool, an integration, a browser extension, or yes, even a classic website if that's what the job calls for.",
+        "details": "Tailored for businesses that need a dedicated software project — a booking system, a client portal, an integration with your existing tools (accounting, CRM, or inventory), a browser extension, or a classic website. There are no fixed templates; the solution is built from scratch around your exact needs, with a focus on security, scalability, and an architecture that can grow with your business.",
         "features": [
-          "Unlimited pages",
-          "Custom web application",
+          "Custom solution – web, app, extension, or integration",
+          "From idea to production-ready product",
           "API and systems integrations",
-          "Dedicated performance and security setup",
-          "Ongoing maintenance agreement",
+          "Unlimited scope, tailored to the task",
+          "Ongoing maintenance agreement (optional)",
           "Priority support"
         ],
         "cta": "Contact me",
         "highlighted": false,
-        "launchOfferEligible": false
+        "launchOfferEligible": true
       }
     ],
-    "note": "All prices exclude VAT (moms). Hosting and domain are not included in the one-time project packages — I will gladly help you get everything set up initially, or you can opt for the Maintenance & Support plan to have me manage it continuously.",
+    "note": "All prices exclude VAT (moms). Hosting and domain are not included in the project packages — I will gladly help you get everything set up initially, or you can opt for the Maintenance & Support plan to have me manage it continuously.",
     "faq": {
       "title": "Frequently asked questions",
       "items": [
         {
-          "question": "How long does a project take?",
-          "answer": "A typical Basic project takes 2-3 weeks, while Professional and Enterprise projects usually take 4-8 weeks depending on the overall scope and specific functionality needed."
+          "question": "Do you work with systems I already have?",
+          "answer": "Yes — that's actually most of what I do. I regularly step into an existing codebase to fix bugs, add features, or keep it moving forward, whether or not I built it originally."
         },
         {
-          "question": "Can I edit the content myself afterward?",
-          "answer": "Yes. For Professional and Enterprise packages, I integrate a Content Management System (CMS) so you can update copy, manage pages, and change images independently without writing code."
+          "question": "Can I still get a standard website built?",
+          "answer": "Absolutely. I've shifted my focus to custom software, but if what you need is a classic website, that's simply handled as a project under the Custom Software package."
+        },
+        {
+          "question": "How long does a custom software project take?",
+          "answer": "It depends entirely on scope — a small integration might be ready in 1-2 weeks, while a larger system typically takes 4-8 weeks. You'll get a concrete estimate once we've talked through the task."
         },
         {
           "question": "Do you offer payment plans?",
-          "answer": "Yes, projects are securely invoiced in two equal installments: 50% upfront at project kickoff and the remaining 50% upon final launch. Get in touch to arrange the practical details."
+          "answer": "Yes, fixed-scope projects are invoiced in two installments for security: 50% upfront at kickoff and the remaining 50% on final delivery. Hourly work is invoiced on an ongoing basis. Get in touch if you'd like a different structure."
         }
       ]
     },
     "cta": {
       "title": "Ready to get started?",
-      "body": "Tell me about your project and I'll get back to you within 24 hours with next steps.",
+      "body": "Tell me about your task and I'll get back to you within 24 hours with next steps.",
       "button": "Get in touch"
     }
   },
   "contact": {
     "meta": {
-      "title": "Contact – Web Developer in Haslev, Denmark",
-      "description": "Have a web project in mind? Get in touch with Havenkvist Tech in Haslev for a no-obligation chat about your new website."
+      "title": "Contact – Freelance Software Consultant in Haslev, Denmark",
+      "description": "Have a software project or technical task in mind? Get in touch with Havenkvist Tech in Haslev for a no-obligation chat."
     },
     "hero": {
       "label": "Contact",
-      "title": "Let's talk about your project",
+      "title": "Let's talk about your task",
       "subtitle": "Fill in the form below and I'll get back to you within 24 hours."
     },
     "form": {
@@ -347,7 +317,7 @@
       "serviceLabel": "Service",
       "serviceOptionGeneral": "General inquiry / not sure",
       "messageLabel": "Message",
-      "messagePlaceholder": "Tell me about your project...",
+      "messagePlaceholder": "Tell me about your task...",
       "planPrefix": "Hi, I'm interested in the",
       "planSuffix": "package. Could you tell me more?",
       "planNoticeLabel": "Selected plan",
@@ -358,11 +328,11 @@
     }
   },
   "footer": {
-    "tagline": "Freelance web development focused on performance, design, and results.",
+    "tagline": "Freelance software consultant focused on bug fixes, ongoing development, and custom solutions — for businesses across Denmark.",
     "columnsNav": "Navigation",
     "columnsContact": "Contact",
     "email": "luhavenkvist@yahoo.dk",
-    "location": "Haslev, Denmark · Serving all of Zealand",
+    "location": "Haslev, Denmark · Freelance across Denmark",
     "rights": "All rights reserved."
   }
 }

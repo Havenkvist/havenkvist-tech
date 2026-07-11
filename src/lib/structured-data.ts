@@ -20,7 +20,7 @@ export function professionalServiceJsonLd(locale: Locale, dict: Dictionary) {
       addressLocality: "Haslev",
       addressCountry: "DK",
     },
-    areaServed: ["Haslev", "Faxe", "Næstved", "Køge", "Region Sjælland"],
+    areaServed: ["Haslev", "Faxe", "Næstved", "Køge", "Region Sjælland", "Danmark"],
     inLanguage: locale,
   };
 }

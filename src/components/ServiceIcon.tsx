@@ -29,6 +29,13 @@ export function ServiceIcon({ icon }: { icon: string }) {
           <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" />
         </svg>
       );
+    case "hourly":
+      return (
+        <svg {...common}>
+          <circle cx="12" cy="13" r="8" />
+          <path d="M12 9v4l3 2M9 2h6" />
+        </svg>
+      );
     default:
       return null;
   }

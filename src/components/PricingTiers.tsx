@@ -212,7 +212,15 @@ export function PricingTiers({
         </div>
       )}
 
-      <div className={`grid gap-8 ${expandedTier ? "sm:grid-cols-2" : "lg:grid-cols-3"}`}>
+      <div
+        className={`grid gap-8 ${
+          expandedTier
+            ? "sm:grid-cols-2"
+            : collapsedTiers.length <= 2
+              ? "mx-auto max-w-3xl sm:grid-cols-2"
+              : "lg:grid-cols-3"
+        }`}
+      >
         {collapsedTiers.map((tier) => {
           const previewFeatures = tier.features.slice(0, FEATURE_PREVIEW_LIMIT);
           const extraCount = tier.features.length - previewFeatures.length;

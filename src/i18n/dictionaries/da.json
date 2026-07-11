@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Havenkvist Tech – Freelance webudvikler baseret i Haslev",
-    "description": "Freelance webudvikler baseret i Haslev. Jeg bygger hurtige, professionelle hjemmesider, samt skræddersyede projekter på hele Sjælland."
+    "title": "Havenkvist Tech – Freelance software-konsulent i Danmark",
+    "description": "Freelance software-konsulent baseret i Haslev. Jeg hjælper danske virksomheder med fejlrettelser, videreudvikling og skræddersyede softwareløsninger — fra ad-hoc opgaver til komplette systemer."
   },
   "nav": {
     "home": "Forside",
@@ -14,10 +14,10 @@
   },
   "home": {
     "hero": {
-      "badge": "Software specialister",
+      "badge": "Freelance software-konsulent",
       "title": "Vi bygger software der",
       "titleHighlight": "vokser med din forretning",
-      "subtitle": "Havenkvist Tech er et freelance software konsulenthus, der designer og bygger software med moderne teknologi, med fokus på skalerbarhed og brugervenlighed — skræddersyet til din virksomhed.",
+      "subtitle": "Havenkvist Tech er et freelance software-konsulenthus, der designer, bygger og videreudvikler software med moderne teknologi — fra fejlrettelser og nye funktioner til komplette, skræddersyede løsninger, med fokus på skalerbarhed og brugervenlighed.",
       "ctaPrimary": "Start dit projekt",
       "ctaSecondary": "Se vores arbejde",
       "stats": [
@@ -27,42 +27,46 @@
     "intro": {
       "label": "Hvorfor Havenkvist Tech",
       "title": "Teknisk håndværk møder forretningsforståelse",
-      "body": "Jeg kombinerer moderne webteknologi med en klar forståelse for, hvad der faktisk driver din forretning fremad. Ingen unødvendig kompleksitet — kun løsninger der virker.",
+      "body": "Jeg kombinerer moderne softwareudvikling med en klar forståelse for, hvad der faktisk driver din forretning fremad — uanset om opgaven er at rette en fejl, bygge en ny funktion eller udvikle noget helt nyt fra bunden.",
       "points": [
         {
-          "title": "Skræddersyet kode bygget til at vare",
-          "body": "Med fokus på kode kvalitet og skalérbarhed bygger jeg løsninger, der passer til din bedst forretning."
+          "title": "Løser det du allerede har",
+          "body": "Fejlretting, opdateringer og nye funktioner til eksisterende sider og systemer — du behøver ikke starte forfra for at få hjælp."
+        },
+        {
+          "title": "Bygger det du mangler",
+          "body": "Skræddersyet software fra bunden — webapplikationer, interne værktøjer, integrationer og extensions, tilpasset præcis dit behov."
         },
         {
           "title": "Direkte samarbejde",
-          "body": "Du taler direkte med den udvikler, der bygger din løsning — ingen forvirrende mellemled, ingen misforståelser."
+          "body": "Du taler direkte med den udvikler, der løser opgaven — ingen forvirrende mellemled, ingen misforståelser."
         }
       ]
     },
     "cta": {
-      "title": "Klar til at løfte din digitale tilstedeværelse?",
+      "title": "Klar til at få løst din næste software-opgave?",
       "body": "Lad os tale om dit projekt. Book en uforpligtende samtale, så finder vi ud af, hvordan jeg bedst kan hjælpe dig.",
       "button": "Kontakt mig"
     }
   },
   "about": {
     "meta": {
-      "title": "Om mig – Freelance webudvikler baseret i Haslev",
-      "description": "Mød Lucas, fullstack-udvikler og ansigtet bag Havenkvist Tech. Baseret i Haslev og bygger moderne, hurtige hjemmesider til virksomheder i hele danmark."
+      "title": "Om mig – Freelance software-konsulent baseret i Haslev",
+      "description": "Mød Lucas, fullstack-udvikler og ansigtet bag Havenkvist Tech. Baseret i Haslev og løser softwareopgaver — fra fejlrettelser til skræddersyede systemer — for virksomheder i hele Danmark."
     },
     "hero": {
       "label": "Om mig",
       "title": "Kode om dagen, kode om natten",
-      "subtitle": "personen bag Havenkvist Tech — og hvorfor dette freelance software konsulent eksisterer."
+      "subtitle": "Personen bag Havenkvist Tech — og hvorfor dette freelance software-konsulenthus eksisterer."
     },
     "story": {
       "label": "Min baggrund",
       "title": "Fullstack-udvikler med en natlig passion for frontend",
       "paragraphs": [
         "Jeg hedder Lucas og er fullstack-udvikler bosat i Haslev. Om dagen bygger og vedligeholder jeg produktionsapplikationer med Elixir og Phoenix LiveView — systemer, der skal være hurtige, driftsikre og nemme at overskue i stor skala.",
-        "Havenkvist Tech er mit aften- og weekendprojekt — et mindre freelance-studie, hvor jeg udforsker den anden side af stacken. Her arbejder jeg primært med React, TypeScript og Next.js og bygger moderne hjemmesider og webapplikationer til kunder, der ønsker en kompromisløs og poleret tilstedeværelse online.",
+        "Havenkvist Tech er mit aften- og weekendprojekt — et freelance software-konsulenthus, hvor jeg tager imod alt fra mindre fejlrettelser og videreudvikling af eksisterende systemer til helt nye, skræddersyede løsninger. Uanset om du har brug for en hurtig løsning på et konkret problem, eller vil bygge noget helt fra bunden, kan du hyre mig til opgaven.",
         "At dele min tid mellem de to økosystemer holder mig skarp. Den disciplin og enkelhed, jeg værdsætter i Elixir, præger den måde, jeg skriver React på — forudsigelig state, tydelig datastrøm og robust kode, der ikke overrasker dig om et halvt år.",
-        "Når jeg ikke er på mit daglige arbejde eller i gang med kundeprojekter, finder du mig typisk i gang med at finpudse netop denne side, læse op på webperformance eller eksperimentere med de nyeste Next.js-funktioner."
+        "Når jeg ikke er på mit daglige arbejde eller i gang med kundeprojekter, finder du mig typisk i gang med at finpudse netop denne side, læse op på softwarearkitektur eller eksperimentere med nye teknologier."
       ]
     },
     "education": {
@@ -75,21 +79,21 @@
       "points": [
         {
           "title": "Driftsikkerhed",
-          "body": "Produktionserfaring fra mit daglige arbejde betyder, at jeg tager oppetid, test og langsigtet vedligeholdelse alvorligt — også i mindre projekter."
+          "body": "Produktionserfaring fra mit daglige arbejde betyder, at jeg tager oppetid, test og langsigtet vedligeholdelse alvorligt — også i mindre opgaver."
         },
         {
           "title": "Tydelig kommunikation",
-          "body": "Du ved altid nøjagtigt, hvor dit projekt står. Ingen indforstået fagjargon, ingen radiotavshed — kun ærlige, direkte opdateringer."
+          "body": "Du ved altid nøjagtigt, hvor din opgave står. Ingen indforstået fagjargon, ingen radiotavshed — kun ærlige, direkte opdateringer."
         },
         {
           "title": "Moderne håndværk",
-          "body": "Hvert projekt bygges med den samme moderne og gennemtestede stack, jeg selv bruger til at udforske nye idéer: React, TypeScript og Next.js."
+          "body": "Hver opgave løses med en moderne og gennemtestet stack, uanset om det er en fejlrettelse, en ny funktion eller et helt nyt system."
         }
       ]
     },
     "contact": {
       "title": "Lad os komme i kontakt",
-      "body": "Har du et projekt i tankerne, eller vil du bare sige hej? Skriv direkte til mig — jeg læser og svarer på alle henvendelser selv.",
+      "body": "Har du en opgave i tankerne, eller vil du bare sige hej? Skriv direkte til mig — jeg læser og svarer på alle henvendelser selv.",
       "addressLabel": "Adresse",
       "addressLines": ["Frøgårdsvej 7, 2. th.", "4690 Haslev"],
       "emailLabel": "Email",
@@ -98,22 +102,35 @@
     },
     "cta": {
       "title": "Klar til at starte et projekt?",
-      "body": "Lad os tale om, hvad du er i gang med at bygge, og hvordan jeg kan hjælpe med at bringe det til virkelighed.",
+      "body": "Lad os tale om, hvad du er i gang med at bygge eller vedligeholde, og hvordan jeg kan hjælpe.",
       "button": "Kontakt mig"
     }
   },
   "services": {
     "list": [
       {
-        "id": "web-development",
+        "id": "custom-software",
         "icon": "code",
-        "title": "Webudvikling (Next.js/React)",
-        "description": "Skræddersyede hjemmesider og webapplikationer bygget med Next.js og React — moderne, lynhurtige og klar til at vokse med din forretning.",
+        "title": "Skræddersyet softwareudvikling",
+        "description": "Softwareløsninger bygget fra bunden til netop dit behov — webapplikationer, interne værktøjer, integrationer og browser-extensions.",
         "features": [
-          "Skræddersyet design og udvikling",
-          "Server-side rendering for optimal SEO",
-          "Responsivt design til alle skærmstørrelser",
-          "Integration med CMS, betalingsløsninger og API'er"
+          "Skræddersyet arkitektur og design",
+          "Webapplikationer og interne værktøjer",
+          "Browser-extensions og integrationer",
+          "API-integrationer og automatisering"
+        ],
+        "addon": null
+      },
+      {
+        "id": "freelance-adhoc",
+        "icon": "hourly",
+        "title": "Freelance & ad-hoc udvikling",
+        "description": "Har du allerede et system, en hjemmeside eller en app? Jeg hopper ind og løser konkrete opgaver — uden lange kontrakter eller bindingsperioder.",
+        "features": [
+          "Fejlretting og bugfixes",
+          "Implementering af nye funktioner",
+          "Opdatering af eksisterende kode",
+          "Transparent timeregistrering"
         ],
         "addon": null
       },
@@ -121,7 +138,7 @@
         "id": "maintenance-support",
         "icon": "maintenance",
         "title": "Vedligeholdelse & support",
-        "description": "Løbende teknisk vedligeholdelse, så din hjemmeside altid er opdateret, sikker og fejlfri — uden at du selv skal røre en finger.",
+        "description": "Løbende teknisk vedligeholdelse, så din software altid er opdateret, sikker og fejlfri — uden at du selv skal røre en finger.",
         "features": [
           "Løbende opdateringer af afhængigheder",
           "Sikkerhedsovervågning og fejlrettelser",
@@ -132,22 +149,9 @@
           "label": "Valgfrit tilvalg",
           "price": "4.000 kr.",
           "period": "pr. år",
-          "body": "Jeg sørger for, at din hjemmeside altid kører perfekt. Dette inkluderer hostingadministration og fornyelse af domæne, så du slipper for de tekniske detaljer.",
+          "body": "Jeg sørger for, at din software altid kører perfekt. Dette inkluderer hostingadministration og fornyelse af domæne, så du slipper for de tekniske detaljer.",
           "note": "Vælger du dette fra, hjælper jeg dig med at sætte hosting og domæne op i starten — men derefter overgår ansvaret for fornyelser, oppetid og tekniske opdateringer til dig selv."
         }
-      },
-      {
-        "id": "performance-optimization",
-        "icon": "performance",
-        "title": "Performance-optimering",
-        "description": "Hurtigere hjemmesider sikrer en bedre brugeroplevelse, markant højere konvertering og stærkere placeringer i søgemaskinerne.",
-        "features": [
-          "Core Web Vitals og Lighthouse-analyse",
-          "Billede- og asset-optimering",
-          "Avanceret kodesplitting og caching-strategi",
-          "Løbende performance-monitorering"
-        ],
-        "addon": null
       }
     ],
     "process": {
@@ -202,24 +206,24 @@
       "direct": "Kundeanmeldelse"
     },
     "cta": {
-      "title": "Har du et lignende projekt i tankerne?",
-      "body": "Lad os tale om, hvad du er i gang med at bygge, og hvordan jeg kan hjælpe med at bringe det til virkelighed.",
+      "title": "Har du en lignende opgave i tankerne?",
+      "body": "Lad os tale om, hvad du er i gang med at bygge eller vedligeholde, og hvordan jeg kan hjælpe.",
       "button": "Kontakt mig"
     }
   },
   "pricing": {
     "meta": {
-      "title": "Ydelser & priser – Hjemmesider til håndværkere & lokale virksomheder",
-      "description": "Webudvikling, vedligeholdelse og performance-optimering til mindre erhverv, med gennemsigtige priser fra 9.995 kr. og timebaseret freelance-bistand. Baseret i Haslev."
+      "title": "Ydelser & priser – Freelance software-konsulent i Danmark",
+      "description": "Freelance softwareudvikling til faste 450 kr./time, samt skræddersyede softwareprojekter efter tilbud. Fejlrettelser, nye funktioner, integrationer og komplette systemer — baseret i Haslev, for virksomheder i hele Danmark."
     },
     "hero": {
       "label": "Ydelser & priser",
-      "title": "Det jeg bygger, og hvad det koster",
-      "subtitle": "Fra nye hjemmesider til løbende vedligeholdelse og freelancearbejde på timebasis — gennemsigtige priser, helt uden skjulte gebyrer."
+      "title": "Fleksibel hjælp, gennemsigtige priser",
+      "subtitle": "Fra hurtige fejlrettelser på timebasis til komplette, skræddersyede softwareprojekter — ingen skjulte gebyrer, kun ærlige priser."
     },
     "launchOffer": {
-      "deliveredOne": "1 hjemmeside leveret indtil videre",
-      "deliveredOther": "{count} hjemmesider leveret indtil videre",
+      "deliveredOne": "1 projekt leveret indtil videre",
+      "deliveredOther": "{count} projekter leveret indtil videre",
       "nextUp": "Du ville være kunde #{n}",
       "spotsOne": "1 rabatplads tilbage",
       "spotsOther": "{count} rabatpladser tilbage",
@@ -231,74 +235,40 @@
     "servicesTitle": "Det jeg tilbyder",
     "tiers": [
       {
-        "name": "Basic",
-        "price": "9.995 kr.",
-        "period": "engangsbeløb",
-        "description": "Perfekt til iværksættere og mindre virksomheder, der har brug for en skarp og professionel profil online.",
-        "details": "En strømlinet, lynhurtig hjemmeside med op til 5 sider — ideel til f.eks. forside, ydelser, om os og kontakt. Løsningen er fuldt responsiv på mobil og tablet, optimeret grundlæggende til Google-søgninger og udstyret med en sikker kontaktformular. Der medfølger 1 måneds dedikeret support efter lancering, så vi er sikre på, at alt spiller.",
-        "features": [
-          "Op til 5 sider",
-          "Responsivt design",
-          "Grundlæggende SEO-opsætning",
-          "Sikker kontaktformular",
-          "1 måneds support efter lancering"
-        ],
-        "cta": "Vælg Basic",
-        "highlighted": false,
-        "launchOfferEligible": true
-      },
-      {
-        "name": "Professional",
-        "price": "19.995 kr.",
-        "period": "engangsbeløb",
-        "description": "Til virksomheder der ønsker fuldstændig skræddersyet design og udvidet funktionalitet.",
-        "details": "En komplet, unikt designet hjemmeside med op til 12 sider, bygget helt fra bunden uden tunge skabeloner. Siden integreres med et brugervenligt CMS, så du nemt kan redigere tekst og billeder uden teknisk snilde. Indeholder avanceret hastighedsoptimering, dybdegående SEO-arbejde og understøttelse af flersproget opsætning (DA/EN). Inkluderer 3 måneders tæt support efter lancering.",
-        "features": [
-          "Op til 12 sider",
-          "Skræddersyet UI/UX-design",
-          "CMS-integration (nem redigering)",
-          "Avanceret SEO og performance-optimering",
-          "Flersproget opsætning (DA/EN)",
-          "3 måneders support efter lancering"
-        ],
-        "cta": "Vælg Professional",
-        "highlighted": true,
-        "launchOfferEligible": true
-      },
-      {
         "name": "Timebasis / Ad-hoc",
         "price": "450 kr.",
         "period": "pr. time",
-        "description": "Til eksisterende hjemmesider der har brug for løbende opdateringer, fejlrettelser eller nye funktioner.",
-        "details": "Ideelt hvis du allerede har en fungerende løsning, men mangler en erfaren udvikler til at rette tekniske fejl, bygge en ny underside, optimere indlæsningshastigheden eller tilføje specifikke React/Next.js-komponenter. Du betaler udelukkende for den faktiske tid, der bruges, og timerne registreres fuldstændig transparent. En fleksibel løsning uden binding.",
+        "description": "Til dig der har et konkret behov — fejlretting, en ny funktion, en opdatering eller en hjælpende hånd til et eksisterende system. Ingen bindingsperiode, ingen faste pakker.",
+        "details": "Perfekt hvis du allerede har en hjemmeside, webapp eller et system, men mangler en erfaren udvikler til at rette fejl, implementere en ny funktion, bygge en integration eller extension, eller optimere det, der allerede kører. Du betaler udelukkende for den faktiske tid, der bruges, og timerne registreres fuldstændig transparent. Dette er kernen i, hvad jeg tilbyder som freelancer — hyr mig til præcis den opgave, du har brug for løst.",
         "features": [
-          "Fejlretning & tekniske opdateringer",
-          "Performance- & hastighedsoptimering",
-          "Udvikling af specialfunktioner",
+          "Fejlretting & tekniske opdateringer",
+          "Implementering af nye funktioner",
+          "Extensions, integrationer & automatisering",
+          "Videreudvikling af eksisterende kode",
           "Transparent tidsregistrering",
-          "Ingen faste bindingsperioder"
+          "Ingen bindingsperiode"
         ],
-        "cta": "Hyres på timebasis",
-        "highlighted": false,
+        "cta": "Hyr mig på timebasis",
+        "highlighted": true,
         "launchOfferEligible": false
       },
       {
-        "name": "Enterprise",
+        "name": "Skræddersyet software",
         "price": "Kontakt mig",
         "period": "skræddersyet tilbud",
-        "description": "Til komplekse platforme, deciderede webapplikationer og forretninger med særlige krav.",
-        "details": "Skræddersyet til virksomheder, der har brug for avancerede systemer — såsom integrerede bookingsystemer, lukkede kundeportaler eller tætte integrationer med eksterne forretningsværktøjer (økonomi-, CRM- eller lagersystemer). Der er ingen begrænsninger på antal sider, arkitekturen bygges med maksimal sikkerhed, og der medfølger en prioriteret vedligeholdelsesaftale.",
+        "description": "Til virksomheder der har brug for en større løsning — en helt ny webapplikation, et internt værktøj, en integration, en browser-extension, eller ja, også en klassisk hjemmeside, hvis det er dét, opgaven kræver.",
+        "details": "Skræddersyet til virksomheder, der har brug for et decideret softwareprojekt — det kan være et bookingsystem, en kundeportal, en integration mod jeres eksisterende værktøjer (økonomi, CRM eller lager), en browser-extension eller en klassisk hjemmeside. Der er ingen faste skabeloner; løsningen bygges fra bunden til netop jeres behov, med fokus på sikkerhed, skalérbarhed og en arkitektur, der kan vokse i takt med jeres forretning.",
         "features": [
-          "Ubegrænset antal sider",
-          "Skræddersyet webapplikation",
+          "Skræddersyet løsning – web, app, extension eller integration",
+          "Fra idé til færdigt, driftsklart produkt",
           "API- og systemintegrationer",
-          "Dedikeret performance- og sikkerhedsopsætning",
-          "Løbende vedligeholdelsesaftale",
+          "Ubegrænset omfang, tilpasset opgaven",
+          "Løbende vedligeholdelsesaftale (valgfrit)",
           "Prioriteret support"
         ],
         "cta": "Kontakt mig",
         "highlighted": false,
-        "launchOfferEligible": false
+        "launchOfferEligible": true
       }
     ],
     "note": "Alle priser er ekskl. moms. Hosting og domæneafgifter er ikke inkluderet i projektpakkerne — jeg hjælper dig gladeligt med den indledende opsætning, eller du kan vælge vores Vedligeholdelse & support-aftale, så jeg håndterer driften kontinuerligt.",
@@ -306,33 +276,37 @@
       "title": "Ofte stillede spørgsmål",
       "items": [
         {
-          "question": "Hvor lang tid tager et projekt?",
-          "answer": "Et typisk Basic-projekt tager 2-3 uger, mens Professional og Enterprise-projekter typisk strækker sig over 4-8 uger afhængigt af det specifikke omfang og funktionskrav."
+          "question": "Arbejder du med systemer, jeg allerede har?",
+          "answer": "Ja, og det er faktisk det, jeg bruger mest tid på. Jeg hopper gerne ind i en eksisterende kodebase for at rette fejl, tilføje funktioner eller videreudvikle det, der allerede findes — uanset om jeg selv har bygget det oprindeligt."
         },
         {
-          "question": "Kan jeg selv redigere indholdet bagefter?",
-          "answer": "Ja. Ved Professional- og Enterprise-pakkerne integrerer jeg et Content Management System (CMS), som gør det nemt for dig at opdatere tekster, oprette sider og udskifte billeder helt uden at skulle kode."
+          "question": "Kan jeg stadig få bygget en almindelig hjemmeside?",
+          "answer": "Ja, helt sikkert. Jeg har flyttet fokus til skræddersyede softwareløsninger, men har du brug for en klassisk hjemmeside, håndteres det blot som et projekt under Skræddersyet software-pakken."
+        },
+        {
+          "question": "Hvor lang tid tager et skræddersyet softwareprojekt?",
+          "answer": "Det afhænger helt af omfanget — en mindre integration kan være klar på 1-2 uger, mens et større system typisk tager 4-8 uger. Du får et konkret estimat, når vi har talt om opgaven."
         },
         {
           "question": "Tilbyder du betalingsplaner?",
-          "answer": "Ja, faste projekter faktureres i to rater af sikkerhedsmæssige årsager: 50% ved projektets opstart og de resterende 50% ved den endelige lancering. Kontakt mig, hvis du ønsker en anden struktur."
+          "answer": "Ja, faste projekter faktureres i to rater af sikkerhedsmæssige årsager: 50% ved projektets opstart og de resterende 50% ved den endelige levering. Timebaseret arbejde faktureres løbende. Kontakt mig, hvis du ønsker en anden struktur."
         }
       ]
     },
     "cta": {
       "title": "Klar til at komme i gang?",
-      "body": "Fortæl mig kort om dit projekt, så vender jeg tilbage inden for 24 timer med forslag til de næste skridt.",
+      "body": "Fortæl mig kort om din opgave, så vender jeg tilbage inden for 24 timer med forslag til de næste skridt.",
       "button": "Kontakt mig"
     }
   },
   "contact": {
     "meta": {
-      "title": "Kontakt – Webudvikler i Haslev",
-      "description": "Har du et webprojekt i tankerne? Kontakt Havenkvist Tech i Haslev for en uforpligtende snak om din nye hjemmeside."
+      "title": "Kontakt – Freelance software-konsulent i Haslev",
+      "description": "Har du et softwareprojekt eller en teknisk opgave i tankerne? Kontakt Havenkvist Tech i Haslev for en uforpligtende snak."
     },
     "hero": {
       "label": "Kontakt",
-      "title": "Lad os tale om dit projekt",
+      "title": "Lad os tale om din opgave",
       "subtitle": "Udfyld formularen nedenfor, så vender jeg tilbage til dig inden for 24 timer."
     },
     "form": {
@@ -343,7 +317,7 @@
       "serviceLabel": "Ydelse",
       "serviceOptionGeneral": "Generel henvendelse / ikke fastlagt",
       "messageLabel": "Besked",
-      "messagePlaceholder": "Fortæl mig lidt om dit projekt...",
+      "messagePlaceholder": "Fortæl mig lidt om din opgave...",
       "planPrefix": "Hej, jeg er interesseret i",
       "planSuffix": "-pakken. Kan du fortælle mig mere?",
       "planNoticeLabel": "Valgt pakke",
@@ -354,11 +328,11 @@
     }
   },
   "footer": {
-    "tagline": "Freelance webudvikling med fokus på performance, design og målbare resultater.",
+    "tagline": "Freelance software-konsulent med fokus på fejlrettelser, videreudvikling og skræddersyede løsninger — for virksomheder i hele Danmark.",
     "columnsNav": "Navigation",
     "columnsContact": "Kontakt",
     "email": "luhavenkvist@yahoo.dk",
-    "location": "Haslev, Danmark · Dækker hele Sjælland",
+    "location": "Haslev, Danmark · Freelance i hele Danmark",
     "rights": "Alle rettigheder forbeholdes."
   }
 }

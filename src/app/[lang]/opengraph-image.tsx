@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Havenkvist Tech – Freelance web developer in Haslev, Denmark";
+export const alt = "Havenkvist Tech – Freelance software consultant in Denmark";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -12,8 +12,8 @@ export default async function Image({
   const { lang } = await params;
   const tagline =
     lang === "en"
-      ? "Freelance Web Developer in Haslev, Denmark"
-      : "Webudvikler i Haslev til håndværkere & små virksomheder";
+      ? "Freelance Software Consultant in Denmark"
+      : "Freelance software-konsulent i Danmark";
 
   return new ImageResponse(
     (
