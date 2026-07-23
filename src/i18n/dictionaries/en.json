@@ -17,6 +17,7 @@
       "badge": "Freelance software consultant",
       "title": "We build software that",
       "titleHighlight": "grows with your business",
+      "techStack": ["React", "TypeScript", "SQL", "GraphQL", "Elixir", "Phoenix LiveView", "Next.js"],
       "subtitle": "Havenkvist Tech is a freelance software consultancy designing, building, and extending software with modern technology — from bug fixes and new features to complete, custom-built solutions, with a focus on scalability and usability.",
       "ctaPrimary": "Start your project",
       "ctaSecondary": "See our work",
@@ -214,7 +215,7 @@
   "pricing": {
     "meta": {
       "title": "Services & Pricing – Freelance Software Consultant in Denmark",
-      "description": "Freelance software development at a flat 450 kr./hour, plus custom software projects by quote. Bug fixes, new features, integrations, and complete systems — based in Haslev, serving businesses across Denmark."
+      "description": "Freelance software development at a flat 500 kr./hour, plus custom software projects by quote. Bug fixes, new features, integrations, and complete systems — based in Haslev, serving businesses across Denmark."
     },
     "hero": {
       "label": "Services & Pricing",
@@ -236,7 +237,7 @@
     "tiers": [
       {
         "name": "Hourly / Ad-hoc",
-        "price": "450 kr.",
+        "price": "500 kr.",
         "period": "per hour",
         "description": "For when you have a specific need — a bug to fix, a feature to add, an update, or a hand with an existing system. No commitment, no fixed packages.",
         "details": "Perfect if you already have a website, web app, or system, but need an experienced developer to fix bugs, implement a new feature, build an integration or extension, or optimize what's already running. You only pay for the exact time spent, tracked fully transparently. This is the core of what I offer as a freelancer — hire me for exactly the task you need solved.",

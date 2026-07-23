@@ -15,11 +15,12 @@
   "home": {
     "hero": {
       "badge": "Freelance software-konsulent",
-      "title": "Vi bygger software der",
+      "title": "Jeg bygger software der",
       "titleHighlight": "vokser med din forretning",
+      "techStack": ["React", "TypeScript", "SQL", "GraphQL", "Elixir", "Phoenix LiveView", "Next.js"],
       "subtitle": "Havenkvist Tech er et freelance software-konsulenthus, der designer, bygger og videreudvikler software med moderne teknologi — fra fejlrettelser og nye funktioner til komplette, skræddersyede løsninger, med fokus på skalerbarhed og brugervenlighed.",
       "ctaPrimary": "Start dit projekt",
-      "ctaSecondary": "Se vores arbejde",
+      "ctaSecondary": "Se mit arbejde",
       "stats": [
         { "value": "24t", "label": "Svar på henvendelser" }
       ]
@@ -31,11 +32,11 @@
       "points": [
         {
           "title": "Løser det du allerede har",
-          "body": "Fejlretting, opdateringer og nye funktioner til eksisterende sider og systemer — du behøver ikke starte forfra for at få hjælp."
+          "body": "Fejlretning (bug-fixing), optimering af ydeevne, refactoring og tilføjelse af nye features i eksisterende React/TypeScript-kodebaser."
         },
         {
           "title": "Bygger det du mangler",
-          "body": "Skræddersyet software fra bunden — webapplikationer, interne værktøjer, integrationer og extensions, tilpasset præcis dit behov."
+          "body": "Skræddersyede administrations-dashboards, komplekse API-integrationer (fx Stripe, CRM/ERP-systemer), interne værktøjer og browser extensions."
         },
         {
           "title": "Direkte samarbejde",
@@ -155,11 +156,11 @@
       }
     ],
     "process": {
-      "title": "Sådan arbejder vi sammen",
+      "title": "Sådan forløber processen",
       "steps": [
         {
           "title": "Opstart & forventningsafstemning",
-          "body": "Vi afdækker dine mål, målgruppe og specifikke krav i en grundig, indledende samtale."
+          "body": "Jeg afdækker dine mål, målgruppe og specifikke krav i en grundig, indledende samtale."
         },
         {
           "title": "Design & udvikling",
@@ -167,7 +168,7 @@
         },
         {
           "title": "Test & lancering",
-          "body": "Vi gennemfører en omfattende test af performance, sikkerhed og funktionalitet inden den endelige lancering."
+          "body": "Jeg gennemfører en omfattende test af performance, sikkerhed og funktionalitet inden den endelige lancering."
         },
         {
           "title": "Opfølgning & drift",
@@ -214,7 +215,7 @@
   "pricing": {
     "meta": {
       "title": "Ydelser & priser – Freelance software-konsulent i Danmark",
-      "description": "Freelance softwareudvikling til faste 450 kr./time, samt skræddersyede softwareprojekter efter tilbud. Fejlrettelser, nye funktioner, integrationer og komplette systemer — baseret i Haslev, for virksomheder i hele Danmark."
+      "description": "Freelance softwareudvikling til faste 500 kr./time, samt skræddersyede softwareprojekter efter tilbud. Fejlrettelser, nye funktioner, integrationer og komplette systemer — baseret i Haslev, for virksomheder i hele Danmark."
     },
     "hero": {
       "label": "Ydelser & priser",
@@ -236,7 +237,7 @@
     "tiers": [
       {
         "name": "Timebasis / Ad-hoc",
-        "price": "450 kr.",
+        "price": "500 kr.",
         "period": "pr. time",
         "description": "Til dig der har et konkret behov — fejlretting, en ny funktion, en opdatering eller en hjælpende hånd til et eksisterende system. Ingen bindingsperiode, ingen faste pakker.",
         "details": "Perfekt hvis du allerede har en hjemmeside, webapp eller et system, men mangler en erfaren udvikler til at rette fejl, implementere en ny funktion, bygge en integration eller extension, eller optimere det, der allerede kører. Du betaler udelukkende for den faktiske tid, der bruges, og timerne registreres fuldstændig transparent. Dette er kernen i, hvad jeg tilbyder som freelancer — hyr mig til præcis den opgave, du har brug for løst.",
@@ -271,7 +272,7 @@
         "launchOfferEligible": true
       }
     ],
-    "note": "Alle priser er ekskl. moms. Hosting og domæneafgifter er ikke inkluderet i projektpakkerne — jeg hjælper dig gladeligt med den indledende opsætning, eller du kan vælge vores Vedligeholdelse & support-aftale, så jeg håndterer driften kontinuerligt.",
+    "note": "Alle priser er ekskl. moms. Hosting og domæneafgifter er ikke inkluderet i projektpakkerne — jeg hjælper dig gladeligt med den indledende opsætning, eller du kan vælge min Vedligeholdelse & support-aftale, så jeg håndterer driften kontinuerligt.",
     "faq": {
       "title": "Ofte stillede spørgsmål",
       "items": [

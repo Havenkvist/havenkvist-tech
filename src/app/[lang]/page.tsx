@@ -60,6 +60,16 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
                 {hero.titleHighlight}
               </span>
             </h1>
+            <div className="mx-auto mt-5 flex max-w-2xl flex-wrap items-center justify-center gap-2">
+              {hero.techStack.map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-white/70"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/60">
               {hero.subtitle}
             </p>
